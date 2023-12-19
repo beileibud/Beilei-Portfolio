@@ -1,9 +1,12 @@
 # beilei-portfolio
 
-Hi, this is Beilei.
+Hi, I am Beilei. I am a Front-End Developer, and UX designer.
 
-Here is my netlify link: https://beilei-portfolio.netlify.app/
+Here is my Portfolio website:
+ https://beilei-portfolio.netlify.app/
 
+<div align="center">
+  Nice meeting U!
+</div>
 
-Preview:
 ![Alt text](assets/beilei.png)
