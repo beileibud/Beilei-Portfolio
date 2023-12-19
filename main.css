@@ -399,4 +399,7 @@ ul {
     display: flex;
     justify-content: space-between;
   }
-    
+
+.section3_pic {
+  width: 50%;
+}
