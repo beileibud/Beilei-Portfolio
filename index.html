@@ -52,7 +52,7 @@
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Beilei</h1>
-        <p class="section__text__p2">a Frontend | UX Designer.</p>
+        <p class="section__text__p2">a UX & Frontend Designer.</p>
         <div class="btn-container">
           <button class="btn btn-color-2" onclick="window.open('./assets/beilei.pdf')">
             Resume
@@ -63,9 +63,9 @@
         </div>
         <div id="socials-container">
           <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-            onclick="location.href='https://linkedin.com/beileibud/'" />
+            onclick="location.href='//linkedin.com/beileibud/'" />
           <img src="./assets/github.png" alt="My Github profile" class="icon"
-            onclick="location.href='https://github.com/beileibud'" />
+            onclick="location.href='//github.com/beileibud'" />
         </div>
       </div>
     </section>
@@ -137,6 +137,14 @@
       <a class="text-reset fw-bold">BeileiUX.com</a>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      var menuLinks = document.querySelector('.menu-links');
+      menuLinks.classList.toggle('open');
+    }
+    </script>
+    
 </body>
 
 </html>
