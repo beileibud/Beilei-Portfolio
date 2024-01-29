@@ -375,7 +375,8 @@ ul {
 .contact-info-upper-container {
   font-size: 1.5rem;
   display: flex;
-  justify-content: center;
+  align-items: center; /* This will vertically center align the icon with the text */
+  justify-content: flex-start; 
   background: rgb(250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
@@ -396,6 +397,9 @@ ul {
 .contact-icon {
   cursor: default;
   margin-top: -1rem;
+}
+icon.contact-icon {
+  margin-right: 10px;
 }
 
 .email-icon {
@@ -657,16 +661,46 @@ footer {
   }
 
   #project-title {
-    font-size: smaller;
+    font-size: 1rem;
   }
 
   #single-project {
     font-size: 1.2rem;
   }
-  /* If you have a footer, adjust its layout too */
+
+  .contact-info-container {
+    font-size: 1rem;
+  }
+  .contact-info-container {
+    flex-direction: row; /* This will keep icon and text side by side */
+    flex-wrap: nowrap; /* This will prevent them from wrapping to a new line */
+    justify-content: flex-start; /* Aligns items to the start of the container */
+    align-items: center; /* Centers items vertically */
+    margin: 0 0;
+  }
+  .contact-icon {
+    height: 1.5rem; /* Adjust icon size for mobile */
+    width: auto; /* Maintain aspect ratio */
+  }
+
+  .contact-info-container a {
+    font-size: 1rem; /* Adjust font size for mobile */
+  }
   footer {
     flex-direction: column;
     align-items: center;
+  }
+  .section-above-contact {
+    margin-bottom: 1rem; /* Reduce bottom margin */
+  }
+
+  .section-above-contact {
+    margin-bottom: 1rem !important; /* Reduce bottom margin */
+  }
+
+  #contact {
+    margin-top: -5rem !important; /* Reduce top margin */
+    margin-bottom: -5rem !important; /* Reduce bottom margin */
   }
 
 }
