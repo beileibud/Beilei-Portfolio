@@ -161,7 +161,11 @@ a:hover {
 }
 
 /* SECTIONS */
-
+.experience-details-container {
+  max-width:1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 section {
   padding-top: 4vh;
   box-sizing: border-box;
@@ -311,7 +315,7 @@ nav#desktop-nav {
 }
 
 .section_pic {
-  width: 70%;
+  width: 90%;
 }
 
 #project-title {
@@ -325,7 +329,6 @@ nav#desktop-nav {
   font-size: 2rem;
   font-family: 'Calliga-Regular';
 }
-
 
 ul {
   list-style: none;
