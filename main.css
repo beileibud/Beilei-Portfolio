@@ -311,7 +311,7 @@ nav#desktop-nav {
 }
 
 .section_pic {
-  width: 60%;
+  width: 70%;
 }
 
 #project-title {
@@ -422,9 +422,19 @@ footer {
   width: 30%;
 }
 
-/* Add this at the bottom of your CSS file */
+.project-card {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
 
-/* This media query applies styles for screens that are 768px wide or less */
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.technologies .badge {
+  margin-right: 5px;
+}
+
 @media (max-width: 768px) {
   nav,
   .nav-links,

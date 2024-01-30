@@ -17,9 +17,9 @@
     <video autoplay muted loop id="video-background">
       <source src="assets/Gradient.mp4" type="video/mp4">
     </video>
-        <!--Nav -->
+    <!--Nav -->
     <nav id="desktop-nav">
-      <div class="logo" >Beilei Zhu</div>
+      <div class="logo">Beilei Zhu</div>
       <div>
         <ul class="nav-links">
           <li><a href="#profile-about">About</a></li>
@@ -43,7 +43,7 @@
         </div>
       </div>
     </nav>
-  
+
     <!-- About -->
     <section id="profile-about" class="container-fliud">
       <div class="section__pic-container">
@@ -63,7 +63,7 @@
         </div>
         <div id="socials-container">
           <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
-            onclick="location.href='//linkedin.com/beileibud/'" />
+            onclick="location.href='//linkedin.com/in/beileibud/'" />
           <img src="./assets/github.png" alt="My Github profile" class="icon"
             onclick="location.href='//github.com/beileibud'" />
         </div>
@@ -77,28 +77,26 @@
     <h1 class="title" style="margin-bottom: 50px;">Projects</h1>
     <div class="experience-details-container">
       <div class="first">
-        <ul id="project-title" 
-        onclick="location.href='//uxfol.io/p/BeileiZhu/Rhino-Splits'">
+        <ul id="project-title" onclick="location.href='//uxfol.io/p/BeileiZhu/Rhino-Splits'">
           <li><a id="single-project">Rhino Splits. NO.1 </a></li>
           <li><a>2023</a></li>
           <li><a>UX Case Study</a></li>
         </ul>
       </div>
       <div style="text-align: center;">
-        <img src="./assets/rhino-home.png" class="section_pic" alt="project2"
-        onclick="location.href='//uxfol.io/p/BeileiZhu/Rhino-Splits'" />
+        <img src="./assets/animated_clear.gif" class="section_pic" alt="project1"
+          onclick="location.href='//uxfol.io/p/BeileiZhu/Rhino-Splits'" />
       </div>
       <div class="second">
-        <ul id="project-title"
-          onclick="location.href='//potofinder.netlify.app'" >
-          <li><a id="single-project">FOTOFinder.   NO.2</a></li>
+        <ul id="project-title" onclick="location.href='//potofinder.netlify.app'">
+          <li><a id="single-project">FOTOFinder. NO.2</a></li>
           <li><a>2023</a></li>
           <li><a>React App</a></li>
         </ul>
       </div>
       <div style="text-align: center;">
         <img src="./assets/fotofinder.png" class="section_pic" alt="project1"
-        onclick="location.href='//potofinder.netlify.app'" />
+          onclick="location.href='//potofinder.netlify.app'" />
       </div>
       <div class="third">
         <ul id="project-title">
@@ -109,6 +107,7 @@
       <div class="section3" style="text-align:center">
         <img src="./assets/new-idea.png" class="section3_pic" alt="project3" />
       </div>
+    </div>
   </section>
 
   <!-- contact -->
@@ -121,7 +120,7 @@
       </div>
       <div class="contact-info-container">
         <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        <p><a href="https://linkedin.com/in/beileibud/">LinkedIn</a></p>
       </div>
     </div>
   </section>
@@ -147,8 +146,18 @@
       var menuLinks = document.querySelector('.menu-links');
       menuLinks.classList.toggle('open');
     }
-    </script>
-    
+  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const projectCards = document.querySelectorAll('.project-card');
+      projectCards.forEach(card => {
+        card.addEventListener('click', function () {
+          window.location.href = this.getAttribute('data-url');
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>
