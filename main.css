@@ -635,7 +635,7 @@ footer {
 
   /* Adjustments to other elements if necessary */
   .title {
-    font-size: 4rem;
+    font-size: 3rem;
     /* Adjust title size */
   }
 
@@ -702,6 +702,7 @@ footer {
   footer {
     flex-direction: column;
     align-items: center;
+    font-size: smaller;
   }
   .section-above-contact {
     margin-bottom: 1rem; /* Reduce bottom margin */
@@ -714,6 +715,10 @@ footer {
   #contact {
     margin-top: -5rem !important; /* Reduce top margin */
     margin-bottom: -5rem !important; /* Reduce bottom margin */
+  }
+  
+  .footer-title {
+    max-width: fit-content;
   }
 
 }
