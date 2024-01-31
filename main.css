@@ -323,6 +323,7 @@ nav#desktop-nav {
   display: flex;
   justify-content: space-between;
   padding: 0 2rem;
+  z-index: 10;
 }
 
 #single-project {
@@ -420,7 +421,7 @@ footer {
   justify-content: space-between;
 }
 
-.section3_pic {
+#section3_pic {
   margin: 100px;
   width: 30%;
 }
@@ -619,7 +620,18 @@ footer {
 
   .nav-links.open {
     display: flex;
-    /* Show when hamburger is clicked */
+  }
+
+  .project-card {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+  .section_pic {
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
   }
 
   #hamburger-nav {
@@ -678,7 +690,20 @@ footer {
   }
 
   #project-title {
-    font-size: 1rem;
+    position: sticky;
+    top: 10px; /* Adjust the top offset for sticky positioning */
+    font-size: 16px; /* Reduce font size for mobile */
+    padding: 5px; /* Adjust padding */
+    background: #FFFFFF; /* Add background color if the text needs to stand out */
+    z-index: 10; /* Ensure the sticky element is above other content */
+    /* Add other styles as needed */
+  }
+
+  /* Other adjustments for project-title children elements if needed */
+  .project-title h1, .project-title p {
+    margin: 0; /* Remove margin */
+    padding: 5px; /* Add padding */
+    /* Add other styles as needed */
   }
 
   #single-project {
@@ -720,12 +745,6 @@ footer {
     margin-top: -5rem !important; /* Reduce top margin */
     margin-bottom: -5rem !important; /* Reduce bottom margin */
   }
-  #contact-title {
-    font-display:inherit;
-  }
-  
-  .footer-title {
-    max-width: fit-content;
-  }
+
 
 }
