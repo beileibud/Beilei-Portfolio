@@ -434,6 +434,10 @@ footer {
   transform: translateY(-10px);
 }
 
+.project-card img {
+  pointer-events: auto; /* This should be the default, but set it explicitly if necessary */
+}
+
 .technologies .badge {
   margin-right: 5px;
 }
@@ -715,6 +719,9 @@ footer {
   #contact {
     margin-top: -5rem !important; /* Reduce top margin */
     margin-bottom: -5rem !important; /* Reduce bottom margin */
+  }
+  #contact-title {
+    font-display:inherit;
   }
   
   .footer-title {
