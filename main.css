@@ -346,6 +346,7 @@ ul {
   background-color: white;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .second {
@@ -354,6 +355,7 @@ ul {
   background-color: white;
   position: sticky;
   top: 52px;
+  z-index: 10;
 }
 
 .third {
@@ -362,6 +364,7 @@ ul {
   background-color: white;
   position: sticky;
   top: 104px;
+  z-index: 10;
 }
 
 .fourth {
@@ -370,6 +373,7 @@ ul {
   background-color: white;
   position: sticky;
   top: 156px;
+  z-index: 10;
 }
 
 /* CONTACT */
@@ -428,13 +432,18 @@ footer {
 
 
 .project-card {
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-  
+  overflow: hidden; /* This ensures that anything going out of the bounds of the card is hidden */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for shadow and transform */
+  position: relative; /* Ensures that the z-index is applied correctly */
+  z-index: 1;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
+  opacity: 0.8;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Adds a shadow for a 'lifted' effect */
+  z-index: 2;
+  cursor: pointer;
 }
 
 .project-card img {
@@ -601,6 +610,14 @@ footer {
   .background-image {
     object-fit: cover;
   }
+  #video-background {
+    display: none;
+  }
+  #two-container {
+    background: url('/assets/11.gif');
+    background-size: cover;
+    object-fit: cover;
+  }
 
   /* Navigation Bar */
   nav {
@@ -627,6 +644,14 @@ footer {
     height: 300px;
     object-fit: cover;
     object-position: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Less pronounced shadow for a flatter design */
+    transition: box-shadow 0.3s, transform 0.3s, opacity 0.3s; /* Smooth transitions for effects */
+  }
+  .project-card:active {
+    /* This will trigger when the user taps and holds the card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* More pronounced shadow for a pressing effect */
+    transform: scale(0.98); /* Slightly scale down to simulate a press */
+    opacity: 0.9; /* Slight transparency */
   }
   .section_pic {
     width: 90%;
