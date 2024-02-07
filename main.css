@@ -43,6 +43,7 @@ nav {
   height: 8vh;
   /* Adjust the height as needed */
   padding: 0 3rem;
+  margin-top: 0.5rem;
   /* Add padding to the sides */
   background-color: white;
   /* Add a background color */
@@ -68,7 +69,7 @@ a:hover {
 }
 
 .logo {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'Calliga-Regular';
 }
 
@@ -170,6 +171,7 @@ section {
   padding-top: 4vh;
   box-sizing: border-box;
   min-height: fit-content;
+  
 }
 
 .section-container {
@@ -228,17 +230,17 @@ nav#desktop-nav {
 
 .section__text__p1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .section__text__p2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .title {
   font-family: 'Mont-HeavyDEMO';
-  font-size: 8rem;
+  font-size: 7rem;
   text-align: center;
 }
 
@@ -408,6 +410,8 @@ ul {
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  margin-bottom: 120px;
+  margin-top: 120px;
 }
 
 .contact-info-upper-container {
@@ -506,7 +510,7 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #333;
-  font-size: 3rem;
+  font-size: 2.5rem;
   z-index: 5;
 }
 
@@ -678,7 +682,7 @@ footer {
 
   .title {
     /* Reduce the font size of titles for smaller screens */
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   /* Adjust the size and layout of other elements as necessary */
@@ -757,13 +761,13 @@ footer {
 
   /* Adjust the logo size if necessary */
   .logo {
-    font-size: 3rem;
+    font-size: 2rem;
     /* Adjust logo size */
   }
 
   /* Adjustments to other elements if necessary */
   .title {
-    font-size: 3rem;
+    font-size: 2rem;
     /* Adjust title size */
   }
 
