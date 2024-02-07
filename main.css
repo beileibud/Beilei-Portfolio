@@ -167,12 +167,30 @@ a:hover {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 section {
-  padding-top: 4vh;
-  box-sizing: border-box;
-  min-height: fit-content;
-  
+  opacity: 0.5; /* Starting state */
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
+
+section.visible, section:hover {
+  opacity: 1;
+  transform: translateY(0);
+  animation: appear 0.6s ease-out forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0.5;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 .section-container {
   display: flex;
