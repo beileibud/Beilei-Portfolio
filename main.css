@@ -314,10 +314,6 @@ nav#desktop-nav {
   position: relative;
 }
 
-.section_pic {
-  width: 90%;
-}
-
 #beilei-pic {
   width: 85%;
   height: 85%;
@@ -432,10 +428,34 @@ footer {
 
 
 .project-card {
-  overflow: hidden; /* This ensures that anything going out of the bounds of the card is hidden */
-  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for shadow and transform */
-  position: relative; /* Ensures that the z-index is applied correctly */
-  z-index: 1;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.project-card > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.project-card img {
+  max-width: 100%;
+  height: auto;
+}
+.project1-img {
+    flex-grow: 2;
+}
+
+.project2-info {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-card:hover {
@@ -452,6 +472,70 @@ footer {
 
 .technologies .badge {
   margin-right: 5px;
+}
+
+.project1-info h2 {
+  font-size: 2.5rem; /* Larger size for titles */
+  font-weight: bold; /* Bold weight for titles */
+  margin-bottom: 0.5rem; /* Space between title and description */
+  color: #333; /* Dark color for text */
+}
+.project2-info h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem; /* Space between title and description */
+  color: #333; /* Dark color for text */
+}
+
+/* Buttons */
+.project1-info, .project2-info button {
+  font-size: 1rem; /* Standard font size for buttons */
+  font-weight: 600; /* Medium weight for button text */
+  border: none; /* No border for a modern look */
+  border-radius: 0.25rem; /* Slightly rounded corners */
+  padding: 0.75rem 1.25rem; /* Padding inside the button */
+  margin-right: 0.5rem; /* Space between buttons if there are more than one */
+  cursor: pointer; /* Cursor to pointer to indicate it's clickable */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* To apply padding and margins */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.project1-info button:hover {
+  background-color: #696c6e; /* Darken button on hover for interaction */
+}
+
+/* You had a typo in 'href'. It should be 'href', not 'hrfg' or 'hrefg'. */
+.project1-info a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Ensure the buttons are links */
+.project1-info button {
+  border: 0;
+  outline: 0;
+  background: none;
+  padding: 0;
+}
+
+.project1-info a.button { /* This assumes you change your <button> to <a class="button"> */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #999999;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.project1-info a.button:hover {
+  background-color: #737373;
+  text-decoration: none; /* No underline on hover */
 }
 
 @media (max-width: 768px) {
@@ -653,13 +737,7 @@ footer {
     transform: scale(0.98); /* Slightly scale down to simulate a press */
     opacity: 0.9; /* Slight transparency */
   }
-  .section_pic {
-    width: 90%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
-  }
-
+.sec
   #hamburger-nav {
     display: block;
     /* Show hamburger icon */
