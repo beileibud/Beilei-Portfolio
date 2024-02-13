@@ -399,38 +399,50 @@ ul {
 
 .first {
   height: 55px;
-  border-top: solid 1px black;
-  background-color: white;
+  /* border-top: solid 1px black; */
   position: sticky;
   top: 0;
   z-index: 10;
+
+  background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .second {
   height: 55px;
-  border-top: solid 1px black;
-  background-color: white;
+  /* border-top: solid 1px black; */
   position: sticky;
   top: 52px;
   z-index: 10;
+
+  background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .third {
   height: 55px;
-  border-top: solid 1px black;
-  background-color: white;
+  /* border-top: solid 1px black; */
   position: sticky;
   top: 156px;
   z-index: 10;
+
+  background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .four {
   height: 55px;
-  border-top: solid 1px black;
-  background-color: white;
+  /* border-top: solid 1px black; */
   position: sticky;
   top: 104px;
   z-index: 10;
+
+    background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -496,7 +508,7 @@ footer {
 .project-card {
   overflow: hidden;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, height 0.3s ease;
-  transform: scale(1);
+  transform: scale(0.95);
   box-shadow: none;
   opacity: 0.7;
   position: relative;
@@ -566,7 +578,7 @@ footer {
 }
 
 .project-card.animate {
-  transform: scale(1.05);
+  transform: scale(1);
   /* Scale effect */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   /* Box-shadow effect */
