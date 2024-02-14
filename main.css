@@ -533,27 +533,22 @@ footer {
 
 .project1-img,
 .project2-img {
-  transform: scale(0.85);
+  transform: scale(0.88);
   flex-grow: 2;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project1-img:hover {
-  transform: scale(0.9);
+  transform: scale(1);
   position: relative;
   z-index: 2;
-  box-shadow: 
-  5px 5px 10px #bebebe, /* Smaller dark shadow for hover effect */
-  -5px -5px 10px #ffffff; 
 }
 
 .project2-img:hover {
-  transform: scale(0.9);
+  transform: scale(1);
   position: relative;
   z-index: 2;
-  box-shadow: 
-  5px 5px 10px #bebebe, /* Smaller dark shadow for hover effect */
-  -5px -5px 10px #ffffff; 
+
 }
 
 
@@ -571,8 +566,8 @@ footer {
 }
 
 .project-card.visible {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   z-index: 2;
   opacity: 1;
 }
@@ -580,7 +575,7 @@ footer {
 .project-card.animate {
   transform: scale(1);
   /* Scale effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   /* Box-shadow effect */
 }
 
