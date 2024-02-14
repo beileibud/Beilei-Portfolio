@@ -839,7 +839,28 @@ footer {
     transform: scale(0.98);
     /* Slightly scale down to simulate a press */
   }
+  .first,
+  .second,
+  .third,
+  .four {
+  height: 30px;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+  }
 
+  .first {
+    top: 0;
+  }
+  .second {
+    top:30px;
+  }
+  .four {
+    top: 60px
+  }
+  .third {
+    top: 90px;
+  }
   .sec #hamburger-nav {
     display: block;
     /* Show hamburger icon */
@@ -873,7 +894,7 @@ footer {
 
   .section__text__p1,
   .section__text__p2 {
-    font-size: 2rem;
+    font-size: 1rem;
     /* Adjust text size */
   }
 
@@ -889,6 +910,7 @@ footer {
   .button-project {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .button1 {
@@ -898,6 +920,7 @@ footer {
   .button2 {
     font-size: small;
     padding: 8px 12px;
+    margin-top: -10px;
   }
 
   /* Adjust social icons if needed */
@@ -929,14 +952,7 @@ footer {
 
   #project-title {
     position: sticky;
-    top: 10px;
-    /* Adjust the top offset for sticky positioning */
-    font-size: 16px;
-    /* Reduce font size for mobile */
-    padding: 5px;
-    /* Adjust padding */
-    background: #FFFFFF;
-    /* Add background color if the text needs to stand out */
+    font-size: 13px;
     z-index: 10;
     /* Ensure the sticky element is above other content */
   }
@@ -944,7 +960,6 @@ footer {
   .project-title h1,
   .project-title p {
     margin: 0;
-    padding: 5px;
   }
 
   #single-project {
@@ -954,7 +969,6 @@ footer {
   .project-info h2 {
     font-size: 1.2rem;
     font-weight: bold;
-    margin: 0 0 10px;
     line-height: 1.2;
   }
 
