@@ -67,8 +67,11 @@ a:hover {
 }
 
 .logo {
-  font-size: 4rem;
-  font-family: 'Calliga-Regular';
+  height: auto;
+  width:auto;
+}
+#big-logo {
+  margin-top: 150px;
 }
 
 .logo:hover {
@@ -255,7 +258,10 @@ nav#desktop-nav {
 }
 
 .section__text__p2 {
-  font-size: 2.5rem;
+  text-align: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -390,7 +396,8 @@ nav#desktop-nav {
 
 #single-project {
   font-size: 2rem;
-  font-family: 'Calliga-Regular';
+  font-family: 'Mont-ExtraLightDEMO';
+  
 }
 
 ul {
@@ -764,7 +771,6 @@ footer {
   }
 
   .title {
-    /* Reduce the font size of titles for smaller screens */
     font-size: 3rem;
   }
 
@@ -796,7 +802,7 @@ footer {
   }
 
   #two-container {
-    background: url('/assets/11.gif');
+    background: url('/assets/circle.gif');
     background-size: cover;
     object-fit: cover;
   }
@@ -894,7 +900,7 @@ footer {
 
   .section__text__p1,
   .section__text__p2 {
-    font-size: 1rem;
+    font-size: 2rem;
     /* Adjust text size */
   }
 
