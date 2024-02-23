@@ -81,7 +81,8 @@ a:hover {
 /* HAMBURGER MENU */
 
 #hamburger-nav {
-  display: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 #hamburger-nav:hover .menu-links {
@@ -91,16 +92,16 @@ a:hover {
 
 .hamburger-menu {
   position: relative;
-  display: inline-block;
+  cursor: pointer;
 }
 
 .hamburger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
-  width: 30px;
-  cursor: pointer;
+  margin-top: 10px;
+  height: 10px;
+  width: 20px;
 }
 
 .hamburger-icon span {
@@ -159,7 +160,7 @@ a:hover {
   opacity: 1;
 }
 
-.hamburger-icon span:first-child {
+.span:first-child {
   transform: none;
 }
 
@@ -692,7 +693,10 @@ footer {
   }
 
   #hamburger-nav {
-    display: block;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
   }
 
   .hamburger-menu {
@@ -714,10 +718,13 @@ footer {
     /* Initially hidden */
     flex-direction: column;
     /* Stack the links vertically */
+    display: flex;
+    justify-content: flex-end;
   }
 
   #hamburger-nav .menu-links.open {
     display: flex;
+    justify-content: flex-end;
   }
 
   #hamburger-nav .menu-links a {
@@ -754,6 +761,10 @@ footer {
   /* This is not necessary but it's a good practice to ensure the menu hides when the mouse leaves */
   #hamburger-nav:not(:hover) .menu-links {
     display: none;
+  }
+
+  .menu-links {
+    background-color: aliceblue;
   }
 
   /* Ensure the nav links are not displayed until the hamburger is clicked */
