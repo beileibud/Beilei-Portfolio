@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link rel="stylesheet" href="main.css" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <title>Beilei Zhu</title>
 </head>
 
@@ -15,11 +16,11 @@
 <body>
   <div id="two-container">
     <video autoplay muted loop id="video-background">
-      <source src="assets/Gradient 04.mp4" type="video/mp4">
+      <source src="assets/back.mp4" type="video/mp4">
     </video>
     <!--Nav -->
     <nav id="desktop-nav">
-      <div class="logo">Beilei Zhu</div>
+      <div class="logo"><img src="assets/logo.png" id="big-logo" alt="logo" style="height: auto; width: auto; max-height: 200px; max-width: 200px;"></div>
       <div>
         <ul class="nav-links">
           <li><a href="#profile-about">About</a></li>
@@ -29,7 +30,7 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Beilei Zhu</div>
+      <div class="logo"><img src="assets/blacklogo.png" alt="logo" style="height: auto; width: auto; max-height: 50px; max-width: 100px;"></div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -46,13 +47,10 @@
 
     <!-- About -->
     <section id="profile-about" class="about-container">
-      <div class="section__pic-container">
-        <img src="./assets/profile-bei1.png" id="beilei-pic" alt="Beilei profile picture" />
-      </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Beilei</h1>
-        <p class="section__text__p2">in UX Design & Front-end.</p>
+        <p class="section__text__p2">A UX Designer ⚡ Skilled in Frontend(React, JavaScript) and Graphic Design,⚡ Crafting intuition-driven experiences centered on understanding users' needs.</p>
         <div class="btn-container">
           <button class="btn btn-color-2" onclick="window.open('./assets/BeileiZhuUX.pdf')">
             Resume
@@ -107,7 +105,7 @@
       <div class="project-card">
         <div class="project2-img">
           <a href="https://potofinder.netlify.app" target="_blank">
-            <img src="./assets/foto.svg" class="section2_pic" alt="FOTOFinder Project" />
+            <img src="./assets/foto1.jpg" class="section2_pic" alt="FOTOFinder Project" />
           </a>
         </div>
         <div class="project-info">
@@ -120,14 +118,14 @@
       </div>
       <div class="four">
         <ul id="project-title">
-          <li><a id="single-project">BanhMi&Roll+ Wall Art</a></li>
+          <li><a id="single-project">BanhMi&Roll+</a></li>
           <li><a>2020</a></li>
           <li><a>Graphic Design</a></li>
         </ul>
       </div>
       <div class="project-card">
-        <div class="project2-img">
-          <a href="https://potofinder.netlify.app" target="_blank">
+        <div class="project3-img">
+          <!-- <a href="https://potofinder.netlify.app" target="_blank"> -->
             <img src="./assets/banhimi.png" class="section2_pic" alt="project3" />
           </a>
         </div>

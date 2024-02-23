@@ -67,8 +67,11 @@ a:hover {
 }
 
 .logo {
-  font-size: 4rem;
-  font-family: 'Calliga-Regular';
+  height: auto;
+  width:auto;
+}
+#big-logo {
+  margin-top: 150px;
 }
 
 .logo:hover {
@@ -255,7 +258,10 @@ nav#desktop-nav {
 }
 
 .section__text__p2 {
-  font-size: 2.5rem;
+  text-align: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -390,7 +396,8 @@ nav#desktop-nav {
 
 #single-project {
   font-size: 2rem;
-  font-family: 'Calliga-Regular';
+  font-family: 'Mont-ExtraLightDEMO';
+  
 }
 
 ul {
@@ -399,38 +406,50 @@ ul {
 
 .first {
   height: 55px;
-  border-top: solid 1px black;
-  background-color: white;
+  /* border-top: solid 1px black; */
   position: sticky;
   top: 0;
   z-index: 10;
+
+  background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .second {
   height: 55px;
-  border-top: solid 1px black;
-  background-color: white;
+  /* border-top: solid 1px black; */
   position: sticky;
   top: 52px;
   z-index: 10;
+
+  background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .third {
   height: 55px;
-  border-top: solid 1px black;
-  background-color: white;
+  /* border-top: solid 1px black; */
   position: sticky;
   top: 156px;
   z-index: 10;
+
+  background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .four {
   height: 55px;
-  border-top: solid 1px black;
-  background-color: white;
+  /* border-top: solid 1px black; */
   position: sticky;
   top: 104px;
   z-index: 10;
+
+    background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -496,7 +515,7 @@ footer {
 .project-card {
   overflow: hidden;
   transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out, height 0.3s ease;
-  transform: scale(1);
+  transform: scale(0.95);
   box-shadow: none;
   opacity: 0.7;
   position: relative;
@@ -521,27 +540,22 @@ footer {
 
 .project1-img,
 .project2-img {
-  transform: scale(0.85);
+  transform: scale(0.88);
   flex-grow: 2;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project1-img:hover {
-  transform: scale(0.9);
+  transform: scale(1);
   position: relative;
   z-index: 2;
-  box-shadow: 
-  5px 5px 10px #bebebe, /* Smaller dark shadow for hover effect */
-  -5px -5px 10px #ffffff; 
 }
 
 .project2-img:hover {
-  transform: scale(0.9);
+  transform: scale(1);
   position: relative;
   z-index: 2;
-  box-shadow: 
-  5px 5px 10px #bebebe, /* Smaller dark shadow for hover effect */
-  -5px -5px 10px #ffffff; 
+
 }
 
 
@@ -559,16 +573,16 @@ footer {
 }
 
 .project-card.visible {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   z-index: 2;
   opacity: 1;
 }
 
 .project-card.animate {
-  transform: scale(1.05);
+  transform: scale(1);
   /* Scale effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
   /* Box-shadow effect */
 }
 
@@ -757,7 +771,6 @@ footer {
   }
 
   .title {
-    /* Reduce the font size of titles for smaller screens */
     font-size: 3rem;
   }
 
@@ -789,7 +802,7 @@ footer {
   }
 
   #two-container {
-    background: url('/assets/11.gif');
+    background: url('/assets/circle.gif');
     background-size: cover;
     object-fit: cover;
   }
@@ -832,7 +845,28 @@ footer {
     transform: scale(0.98);
     /* Slightly scale down to simulate a press */
   }
+  .first,
+  .second,
+  .third,
+  .four {
+  height: 30px;
+  background-color: #ffffffcc;
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  }
 
+  .first {
+    top: 0;
+  }
+  .second {
+    top:30px;
+  }
+  .four {
+    top: 60px
+  }
+  .third {
+    top: 90px;
+  }
   .sec #hamburger-nav {
     display: block;
     /* Show hamburger icon */
@@ -866,7 +900,8 @@ footer {
 
   .section__text__p1,
   .section__text__p2 {
-    font-size: 2rem;
+    font-size: 0.8rem;
+    margin: 1rem;
     /* Adjust text size */
   }
 
@@ -882,6 +917,7 @@ footer {
   .button-project {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .button1 {
@@ -891,6 +927,7 @@ footer {
   .button2 {
     font-size: small;
     padding: 8px 12px;
+    margin-top: -10px;
   }
 
   /* Adjust social icons if needed */
@@ -922,14 +959,7 @@ footer {
 
   #project-title {
     position: sticky;
-    top: 10px;
-    /* Adjust the top offset for sticky positioning */
-    font-size: 16px;
-    /* Reduce font size for mobile */
-    padding: 5px;
-    /* Adjust padding */
-    background: #FFFFFF;
-    /* Add background color if the text needs to stand out */
+    font-size: 13px;
     z-index: 10;
     /* Ensure the sticky element is above other content */
   }
@@ -937,7 +967,6 @@ footer {
   .project-title h1,
   .project-title p {
     margin: 0;
-    padding: 5px;
   }
 
   #single-project {
@@ -947,7 +976,6 @@ footer {
   .project-info h2 {
     font-size: 1.2rem;
     font-weight: bold;
-    margin: 0 0 10px;
     line-height: 1.2;
   }
 
