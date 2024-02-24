@@ -81,8 +81,7 @@ a:hover {
 /* HAMBURGER MENU */
 
 #hamburger-nav {
-  display: flex;
-  justify-content: space-between;
+  display: none;
 }
 
 #hamburger-nav:hover .menu-links {
@@ -92,16 +91,16 @@ a:hover {
 
 .hamburger-menu {
   position: relative;
-  cursor: pointer;
+  display: inline-block;
 }
 
 .hamburger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 10px;
-  height: 10px;
-  width: 20px;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
 }
 
 .hamburger-icon span {
@@ -137,7 +136,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 200px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -160,7 +159,7 @@ a:hover {
   opacity: 1;
 }
 
-.span:first-child {
+.hamburger-icon span:first-child {
   transform: none;
 }
 
@@ -693,14 +692,12 @@ footer {
   }
 
   #hamburger-nav {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+    display: block;
   }
 
   .hamburger-menu {
     display: block;
+    float: right;
   }
 
   /* Mobile navigation dropdown menu styling */
@@ -708,27 +705,23 @@ footer {
     position: absolute;
     /* Position it relative to the parent */
     top: 100%;
-    left: 0;
     right: 0;
     background-color: transparent;
     /* Or any color that fits your design */
     z-index: 1000;
     /* Ensure it stacks on top of other content */
     display: none;
-    /* Initially hidden */
     flex-direction: column;
-    /* Stack the links vertically */
-    display: flex;
-    justify-content: flex-end;
+  
   }
 
   #hamburger-nav .menu-links.open {
     display: flex;
-    justify-content: flex-end;
   }
 
   #hamburger-nav .menu-links a {
-    padding: 15px 20px;
+    font-size: 1rem;
+    padding: 5px 10px;
     /* Add padding for tap targets */
     display: block;
     /* Ensure the links take up the full width */
@@ -736,10 +729,8 @@ footer {
     /* Text color */
     background-color: transparent;
     /* Background color */
-    text-align: left;
-    /* Align text to the left */
+    text-align: center;
     text-decoration: none;
-    /* Remove underline from links */
   }
 
   #hamburger-nav .menu-links a:hover,
@@ -761,10 +752,6 @@ footer {
   /* This is not necessary but it's a good practice to ensure the menu hides when the mouse leaves */
   #hamburger-nav:not(:hover) .menu-links {
     display: none;
-  }
-
-  .menu-links {
-    background-color: aliceblue;
   }
 
   /* Ensure the nav links are not displayed until the hamburger is clicked */
