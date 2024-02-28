@@ -66,6 +66,6 @@ window.onload = () => {
     let span = document.createElement("span");
     span.innerHTML = str[i];
     text.appendChild(span);
-    span.style.transform = `rotate${11*i}deg`
+    span.style.transform = `rotate(${11*i}deg)`
   }
 };
