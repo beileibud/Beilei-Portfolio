@@ -59,13 +59,14 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-const str = "  • About Me •";
+const str = "• About Me •"
 const text = document.getElementById("circleText");
-window.onload = () => {
+window.onload = function() {
   for (let i =0; i < str.length; i++) {
-    let span = document.createElement("span");
+    let span = document.createElement('span');
     span.innerHTML = str[i];
     text.appendChild(span);
-    span.style.transform = `rotate(${11*i}deg)`
+    span.style.transform = `rotate(${10*i}deg)`
   }
 };
+

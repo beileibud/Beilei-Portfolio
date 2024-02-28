@@ -279,18 +279,18 @@ nav#desktop-nav {
 }
 
 #circleText {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   position: absolute;
-  right: 0;
+  right: 5%;
   bottom:20%;
   animation: effect 8s linear infinite;
 }
 @keyframes effect {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -298,7 +298,7 @@ span{
   position: absolute;
   transform-origin: 0px 150px;
   transform-style: flat;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .arrow {
