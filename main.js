@@ -63,10 +63,10 @@ const str = "• About Me •"
 const text = document.getElementById("circleText");
 window.onload = function() {
   for (let i =0; i < str.length; i++) {
-    let span = document.createElement('span');
-    span.innerHTML = str[i];
-    text.appendChild(span);
-    span.style.transform = `rotate(${10*i}deg)`
+    let span1 = document.createElement('span1');
+    span1.innerHTML = str[i];
+    text.appendChild(span1);
+    span1.style.transform = `rotate(${10*i}deg)`
   }
 };
 

@@ -251,6 +251,14 @@ nav#desktop-nav {
   line-height: 1;
   font-weight: 500;
 }
+#design-text {
+  background-color:rgba(255,255,255,0.3);
+  backdrop-filter: blur(20px);
+  /* box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);  */
+  display: inline;
+  line-height: 1;
+  font-weight: 500;
+}
 
 .section__text__p2 {
   position: absolute;
@@ -294,11 +302,14 @@ nav#desktop-nav {
     transform: rotate(360deg);
   }
 }
-span{
+span1{
   position: absolute;
   transform-origin: 0px 150px;
   transform-style: flat;
   text-transform: none;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
 .arrow {
@@ -319,7 +330,9 @@ span{
 
 .about-icon {
   cursor: pointer;
-  height: 1.5rem;
+  height: 1.2rem;
+  margin-right: 15px;
+  margin-left: 5px;
 }
 
 .about-icon:hover {
