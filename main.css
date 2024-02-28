@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Mitchaella Modern Free';
-  src: url('/font/Mitchaella\ Modern\ Free.ttf') format('opentype');
+  font-family: 'SpaceMono-Bold';
+  src: url('/font/SpaceMono-Bold.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'SpaceMono-Regular';
+  src: url('/font/SpaceMono-Regular.ttf') format('opentype');
 }
 
 @font-face {
@@ -9,18 +13,18 @@
 }
 
 @font-face {
-  font-family: 'Mont-ExtraLightDEMO';
-  src: url('/font/Mont-ExtraLightDEMO.otf') format('truetype');
+  font-family: 'Marcellus-Regular';
+  src: url('/font/Marcellus-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Mont-HeavyDEMO';
-  src: url('/font/Mont-HeavyDEMO.otf') format('truetype');
+  font-family: 'CutiveMono-Regular';
+  src: url('/font/CutiveMono-Regular.ttf') format('truetype');
 }
 
 
 body {
-  font-family: 'Mont-ExtraLightDEMO', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'CutiveMono-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   width: 100%;
@@ -40,7 +44,7 @@ nav {
   align-items: center;
   height: 8vh;
   /* Adjust the height as needed */
-  padding: 0 3rem;
+  padding: 0 4rem;
   margin-top: 0.5rem;
   /* Add padding to the sides */
   background-color: white;
@@ -50,7 +54,7 @@ nav {
 .nav-links {
   gap: 2rem;
   list-style: none;
-  font-size: 2rem;
+  font-size:larger;
 }
 
 a {
@@ -60,10 +64,10 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: rgb(65, 65, 65);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: rgb(255, 0, 255);
 }
 
 .logo {
@@ -71,7 +75,7 @@ a:hover {
   width:auto;
 }
 #big-logo {
-  margin-top: 150px;
+  margin-top: 180px;
 }
 
 .logo:hover {
@@ -125,7 +129,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
@@ -165,9 +169,7 @@ a:hover {
 
 /* SECTIONS */
 .experience-details-container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 0 4rem;
 }
 
 section {
@@ -222,60 +224,58 @@ section:hover {
 /* NAVIGATION BAR */
 nav#desktop-nav {
   background: none;
-  /* Remove background from navigation bar */
 }
 
 /* PROFILE ABOUT SECTION */
 #profile-about {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5rem;
   height: 75vh;
   position: relative;
-  /* Ensure proper stacking of elements */
-}
-
-.section__pic-container {
-  display: flex;
-  height: 250px;
-  width: 250px;
-  margin: auto 0;
-}
-
-.section__text {
-  align-self: center;
-  text-align: center;
-}
-
-.section__text p {
-  font-weight: 800;
+  margin: 0 4rem;
 }
 
 .section__text__p1 {
-  text-align: center;
-  font-size: 2.5rem;
+  width: 60%;
+  position: absolute;
+  top:10%;
+  right: 0;
+  font-size: 2rem;
+  margin-right: 0;
+  text-align: justify-all;
+  word-spacing: -8px;
+}
+.section__text__p2 p {
+  background-color:rgba(255,255,255,0.3);
+  backdrop-filter: blur(20px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1); 
+  display: inline;
+  line-height: 1;
+  font-weight: 500;
 }
 
 .section__text__p2 {
-  text-align: center;
-  margin-left: 10rem;
-  margin-right: 10rem;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 30%;
+  font-size: large;
+  text-align: left;
 }
-
+#beilei-name {
+  font-size: x-large;
+}
 .title {
-  font-family: 'Mont-HeavyDEMO';
-  font-size: 7rem;
-  text-align: center;
+  font-family: 'CutiveMono-Regular';
+  font-size: 3rem;
+  text-align: left;
+  margin: 0 4rem;
 }
 
 #socials-container {
   display: flex;
-  justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
+  bottom: 15%;
+  position: absolute;
 }
 
 .arrow {
@@ -284,11 +284,23 @@ nav#desktop-nav {
   bottom: 2.5rem;
 }
 
+.beilei-name {
+  height: 300px;
+}
 /* ICONS */
 
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+
+.about-icon {
+  cursor: pointer;
+  height: 1.5rem;
+}
+
+.about-icon:hover {
+  transform: scale(1.3)
 }
 
 /* BUTTONS */
@@ -395,8 +407,8 @@ nav#desktop-nav {
 }
 
 #single-project {
-  font-size: 2rem;
-  font-family: 'Mont-ExtraLightDEMO';
+  font-size: 1.5rem;
+  font-family: 'CutiveMono-Regular';
   
 }
 
@@ -405,7 +417,7 @@ ul {
 }
 
 .first {
-  height: 55px;
+  height: 45px;
   /* border-top: solid 1px black; */
   position: sticky;
   top: 0;
@@ -417,10 +429,10 @@ ul {
 }
 
 .second {
-  height: 55px;
+  height: 45px;
   /* border-top: solid 1px black; */
   position: sticky;
-  top: 52px;
+  top: 45px;
   z-index: 10;
 
   background-color: #ffffffcc;
@@ -429,10 +441,10 @@ ul {
 }
 
 .third {
-  height: 55px;
+  height: 45px;
   /* border-top: solid 1px black; */
   position: sticky;
-  top: 156px;
+  top: 135px;
   z-index: 10;
 
   background-color: #ffffffcc;
@@ -441,10 +453,10 @@ ul {
 }
 
 .four {
-  height: 55px;
+  height: 45px;
   /* border-top: solid 1px black; */
   position: sticky;
-  top: 104px;
+  top: 90px;
   z-index: 10;
 
     background-color: #ffffffcc;
@@ -468,7 +480,6 @@ ul {
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  /* This will vertically center align the icon with the text */
   justify-content: flex-start;
   background: rgb(250, 250, 250);
   margin: 2rem auto;

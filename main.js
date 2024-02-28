@@ -58,3 +58,14 @@ document.addEventListener("DOMContentLoaded", function() {
     cardObserver.observe(card);
   });
 });
+
+const str = "  • About Me •";
+const text = document.getElementById("circleText");
+window.onload = () => {
+  for (let i =0; i < str.length; i++) {
+    let span = document.createElement("span");
+    span.innerHTML = str[i];
+    text.appendChild(span);
+    span.style.transform = `rotate${11*i}deg`
+  }
+};
