@@ -26,7 +26,6 @@
 body {
   font-family: 'CutiveMono-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
   width: 100%;
 }
 
@@ -251,14 +250,6 @@ nav#desktop-nav {
   line-height: 1;
   font-weight: 500;
 }
-#design-text {
-  background-color:rgba(255,255,255,0.3);
-  backdrop-filter: blur(20px);
-  /* box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);  */
-  display: inline;
-  line-height: 1;
-  font-weight: 500;
-}
 
 .section__text__p2 {
   position: absolute;
@@ -268,9 +259,10 @@ nav#desktop-nav {
   font-size: large;
   text-align: left;
 }
-#beilei-name {
+#hi {
   font-size: x-large;
 }
+
 .title {
   font-family: 'CutiveMono-Regular';
   font-size: 3rem;
@@ -462,6 +454,7 @@ ul {
   background-color: #ffffffcc;
   backdrop-filter: blur(30px);
   box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(255, 255, 255, 0.5);
 }
 
 .second {
@@ -470,10 +463,10 @@ ul {
   position: sticky;
   top: 45px;
   z-index: 10;
-
   background-color: #ffffffcc;
   backdrop-filter: blur(30px);
   box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(255, 255, 255, 0.5);
 }
 
 .third {
@@ -482,7 +475,7 @@ ul {
   position: sticky;
   top: 135px;
   z-index: 10;
-
+  border: 1px solid rgb(255, 255, 255, 0.5);
   background-color: #ffffffcc;
   backdrop-filter: blur(30px);
   box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
@@ -494,8 +487,8 @@ ul {
   position: sticky;
   top: 90px;
   z-index: 10;
-
-    background-color: #ffffffcc;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  background-color: #ffffffcc;
   backdrop-filter: blur(30px);
   box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
