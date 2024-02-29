@@ -75,6 +75,10 @@ a:hover {
 }
 #big-logo {
   margin-top: 180px;
+  width: auto;
+  height: auto;
+  max-width: 180px;
+  max-height: 180px;
 }
 
 .logo:hover {
@@ -641,7 +645,7 @@ footer {
 }
 
 .project-info h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   margin-bottom: 0.5rem;
   color: #333;
@@ -671,7 +675,84 @@ footer {
   /* No underline on hover */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
+  #big-logo {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  .nav-links {
+    font-size: medium;
+  }
+  .section__text {
+    font-size: smaller;
+  }
+
+  .section__text__p1 {
+    font-size: 1.5rem;
+    width: 65%;
+    align-items: flex-end;
+  }
+
+  .section__text__p2 {
+    font-size: small;
+    width: 40%;
+  }
+  #hi {
+    font-size: medium;
+  }
+
+  #circleText {
+    height: 150px;
+    width: 150px;
+  }
+  span1{
+    transform-origin: 0px 135px;
+  }
+
+  .title {
+    font-size: xx-large;
+  }
+  #single-project a {
+    font-size: medium;
+  }
+  #project-title, #single-project {
+    font-size: 1rem;
+  }
+
+  .project-info h2{
+    font-size: medium;
+  }
+
+  .first,
+  .second,
+  .third,
+  .four {
+  height: 30px;
+  background-color: #ffffffcc;
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  }
+
+  .first {
+    top: 0;
+  }
+  .second {
+    top:30px;
+  }
+  .four {
+    top: 60px
+  }
+  .third {
+    top: 90px;
+  }
+  .sec #hamburger-nav {
+    display: block;
+    /* Show hamburger icon */
+  }
+}
+
+
+@media (max-width: 600px) {
 
   nav,
   .nav-links,
@@ -683,25 +764,6 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-
-  .header-title {
-    font-size: smaller;
-    text-align: center;
-  }
-
-  .name {
-    font-size: smaller;
-  }
-
-  .name {
-    white-space: nowrap;
-    /* Prevents the text from wrapping */
-    overflow: hidden;
-    /* Keeps the content from spilling outside the container */
-    text-overflow: ellipsis;
-    /* Adds an ellipsis to indicate clipped text */
-  }
-
 
   .nav-links,
   .contact-info-upper-container,
@@ -809,25 +871,13 @@ footer {
   }
 
   .title {
-    font-size: 3rem;
+    font-size: x-large;
   }
 
   /* Adjust the size and layout of other elements as necessary */
   .btn {
     /* Make buttons full width */
     width: 100%;
-  }
-
-  .section__pic-container {
-    max-width: 40%;
-    height: auto;
-    margin: 0 auto;
-    /* Center align the container */
-  }
-
-  .section__pic-container img {
-    width: 100%;
-    height: auto;
   }
 
   #video-background,
@@ -890,7 +940,7 @@ footer {
   height: 30px;
   background-color: #ffffffcc;
   box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(30px);
   }
 
   .first {
@@ -914,15 +964,8 @@ footer {
     background-color: transparent;
   }
 
-  /* Adjust the logo size if necessary */
-  .logo {
-    font-size: 2rem;
-    /* Adjust logo size */
-  }
-
-  /* Adjustments to other elements if necessary */
   .title {
-    font-size: 2rem;
+    font-size: x-large;
     /* Adjust title size */
   }
 
@@ -938,7 +981,7 @@ footer {
 
   .section__text__p1,
   .section__text__p2 {
-    font-size: 0.8rem;
+    font-size: large;
     margin: 1rem;
     /* Adjust text size */
   }
@@ -997,7 +1040,7 @@ footer {
 
   #project-title {
     position: sticky;
-    font-size: 13px;
+    font-size: medium;
     z-index: 10;
     /* Ensure the sticky element is above other content */
   }
@@ -1007,12 +1050,12 @@ footer {
     margin: 0;
   }
 
-  #single-project {
-    font-size: 1.2rem;
+ .overlay-text3{
+    font-size: medium;
   }
 
   .project-info h2 {
-    font-size: 1.2rem;
+    font-size: medium;
     font-weight: bold;
     line-height: 1.2;
   }
