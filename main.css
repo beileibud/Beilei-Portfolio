@@ -812,12 +812,9 @@ footer p {
   #hamburger-nav {
     display: flex;
   }
-  #contact,
-  footer {
-    height: 40vh;
-  }
+
   #profile {
-    height: 83vh;
+    height: 76vh;
     margin-bottom: 0;
   }
   footer nav {
@@ -942,7 +939,7 @@ footer p {
   #circleText {
     height: 95px;
     width: 95px;
-    bottom: 15%;
+    bottom: 16%;
   }
   span1{
     transform-origin: 0px 90px;
