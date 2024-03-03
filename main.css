@@ -13,6 +13,11 @@
 }
 
 @font-face {
+  font-family: 'SaolSimiBold';
+  src: url('/font/Saol_Text_Semibold.otf') format('truetype');
+}
+
+@font-face {
   font-family: 'SaolDisplaySimiBoldTLC';
   src: url('/font/SaolDisplay-SemiboldItalic.otf') format('truetype');
 }
@@ -36,9 +41,15 @@
 }
 
 @font-face {
+  font-family: 'SaolThinLTC';
+  src: url('/font/SaolDisplay-ThinItalic.otf') format('truetype');
+}
+@font-face {
   font-family: 'SaolBoldTLC';
   src: url('/font/Saol\ Display\ Bold\ Italic.otf') format('truetype');
 }
+
+
 
 body {
   font-family: 'SaolDisplayRegular';
@@ -332,7 +343,7 @@ span1{
 
 .icon {
   cursor: pointer;
-  height: 2rem;
+  height: 1.5rem;
 }
 
 .about-icon {
@@ -688,6 +699,15 @@ footer {
   /* No underline on hover */
 }
 
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
 @media (max-width: 1150px) {
   #big-logo {
     max-width: 120px;
@@ -809,6 +829,7 @@ footer {
   .btn-container {
     flex-wrap: wrap;
   }
+
   .contact-info-container {
     margin: 0;
   }
@@ -835,6 +856,7 @@ footer {
   .section__text {
     width:max-content;
   }
+
     .title {
       font-size: x-large;
     }
@@ -889,18 +911,24 @@ footer {
   }
 
   .section__text__p1 {
+    font-family: 'SaolDisplayThin';
     font-size: large;
-    top:8%;
+    top:15%;
     right: 0;;
     word-spacing: 1px;
     text-align:right;
   }
 
   #design1 {
+    font-family: 'SaolDisplayThin';
     font-size: xx-large;
   }
+  #design-text {
+    font-family: 'SaolThinLTC';
+  }
   .section__text__p2 {
-    top:40%;
+    font-family: 'SaolSimiBold';
+    top:43%;
     font-size: small;
     width: 100%;
     left: 0;
@@ -908,15 +936,16 @@ footer {
   }
 
   #hi {
+    font-family: 'SaolLight';
     font-size: medium;
   }
   #circleText {
-    height: 100px;
-    width: 100px;
+    height: 95px;
+    width: 95px;
+    bottom: 15%;
   }
   span1{
     transform-origin: 0px 90px;
-    font-weight: 800;
     font-size: 1rem;
   }
 
@@ -953,10 +982,22 @@ footer {
     /* Adjust icon size */
   }
 
-  .project-title h1,
-  .project-title p {
+  #profile-about {
+    position: relative;
+    margin: 0 2em;
+  }
+
+  #project-title h1,
+  #project-title p {
     margin: 0;
   }
+
+  #project-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
   .overlay-text3{
     font-size: medium;
   }
@@ -973,8 +1014,13 @@ footer {
   }
 
   footer {
-    flex-direction: column;
-    align-items: center;
-    font-size: smaller;
+    height: 40vh;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
   }
 }
