@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+// about cirrle
 const str = "• About Me •"
 const text = document.getElementById("circleText");
 window.onload = function() {
@@ -70,3 +71,9 @@ window.onload = function() {
   }
 };
 
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}

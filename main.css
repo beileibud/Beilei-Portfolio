@@ -1,31 +1,47 @@
 @font-face {
-  font-family: 'SpaceMono-Bold';
-  src: url('/font/SpaceMono-Bold.ttf') format('opentype');
+  font-family: 'SaolDisplayBold';
+  src: url('/font/SaolDisplay-Bold.otf') format('opentype');
 }
 @font-face {
-  font-family: 'SpaceMono-Regular';
-  src: url('/font/SpaceMono-Regular.ttf') format('opentype');
+  font-family: 'SaolDisplayThin';
+  src: url('/font/SaolDisplay-Thin.otf') format('opentype');
 }
 
 @font-face {
-  font-family: 'Calliga-Regular';
-  src: url('/font/Calliga-Regular.otf') format('truetype');
+  font-family: 'SaolDisplayRegular';
+  src: url('/font/SaolDisplay-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Marcellus-Regular';
-  src: url('/font/Marcellus-Regular.ttf') format('truetype');
+  font-family: 'SaolDisplaySimiBoldTLC';
+  src: url('/font/SaolDisplay-SemiboldItalic.otf') format('truetype');
 }
 
 @font-face {
-  font-family: 'CutiveMono-Regular';
-  src: url('/font/CutiveMono-Regular.ttf') format('truetype');
+  font-family: 'SaolLight';
+  src: url('/font/Saol\ Display\ Light.otf') format('truetype');
+}
+@font-face {
+  font-family: 'SaolMedium';
+  src: url('/font/SaolDisplay-Medium.otf') format('truetype');
+}
+@font-face {
+  font-family: 'SaolMono';
+  src: url('/font/Saol\ Text\ Monospaced.otf') format('truetype');
 }
 
+@font-face {
+  font-family: 'SaolTextThin';
+  src: url('/font/SaolText-Thin.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SaolBoldTLC';
+  src: url('/font/Saol\ Display\ Bold\ Italic.otf') format('truetype');
+}
 
 body {
-  font-family: 'CutiveMono-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'SaolDisplayRegular';
   width: 100%;
 }
 
@@ -38,16 +54,15 @@ nav,
 }
 
 nav {
+  font-family: 'SaolDisplayRegular';
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 8vh;
   /* Adjust the height as needed */
-  padding: 0 4rem;
+  padding: 0 2rem;
   margin-top: 0.5rem;
-  /* Add padding to the sides */
-  background-color: white;
-  /* Add a background color */
+
 }
 
 .nav-links {
@@ -84,16 +99,10 @@ a:hover {
 .logo:hover {
   cursor: default;
 }
-
 /* HAMBURGER MENU */
 
 #hamburger-nav {
   display: none;
-}
-
-#hamburger-nav:hover .menu-links {
-  display: block;
-  /* or 'flex' or whatever display mode you're using */
 }
 
 .hamburger-menu {
@@ -118,6 +127,7 @@ a:hover {
 }
 
 .menu-links {
+  z-index: 5;
   position: absolute;
   top: 100%;
   right: 0;
@@ -132,7 +142,7 @@ a:hover {
   display: block;
   padding: 10px;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
@@ -143,7 +153,7 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 200px;
+  max-height: 300px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -169,6 +179,7 @@ a:hover {
 .hamburger-icon span:first-child {
   transform: none;
 }
+
 
 /* SECTIONS */
 .experience-details-container {
@@ -231,20 +242,26 @@ nav#desktop-nav {
 
 /* PROFILE ABOUT SECTION */
 #profile-about {
-  height: 75vh;
+  height: 100vh;
   position: relative;
-  margin: 0 4rem;
+  margin: 0 4em;
 }
 
 .section__text__p1 {
+  font-family: 'SaolDisplayBold';
   width: 60%;
   position: absolute;
   top:10%;
   right: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-right: 0;
   text-align: justify-all;
-  word-spacing: -8px;
+}
+#design1 {
+  font-size: 3.5rem;
+}
+#design-text {
+font-family: 'SaolDisplaySimiBoldTLC';
 }
 .section__text__p2 p {
   background-color:rgba(255,255,255,0.3);
@@ -252,10 +269,10 @@ nav#desktop-nav {
   box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1); 
   display: inline;
   line-height: 1;
-  font-weight: 500;
 }
 
 .section__text__p2 {
+  font-family: 'SaolMono';
   position: absolute;
   top: 45%;
   left: 0;
@@ -264,13 +281,15 @@ nav#desktop-nav {
   text-align: left;
 }
 #hi {
+  letter-spacing: 2px;
+  font-family: 'SaolBoldTLC';
   font-size: x-large;
 }
 
 .title {
-  font-family: 'CutiveMono-Regular';
+  font-family: 'SaolDisplayRegular';
   font-size: 3rem;
-  text-align: left;
+  text-align: center;
   margin: 0 4rem;
 }
 
@@ -278,7 +297,7 @@ nav#desktop-nav {
   display: flex;
   margin-top: 1rem;
   gap: 1rem;
-  bottom: 15%;
+  bottom: 20%;
   position: absolute;
 }
 
@@ -299,24 +318,16 @@ nav#desktop-nav {
   }
 }
 span1{
+  font-family: 'SaolDisplayBold';
   position: absolute;
   transform-origin: 0px 150px;
   transform-style: flat;
   text-transform: none;
-  color: white;
+  color:rgb(255, 255, 255);
   font-weight: 800;
   font-size: 1.5rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
-
-.beilei-name {
-  height: 300px;
-}
 /* ICONS */
 
 .icon {
@@ -326,7 +337,7 @@ span1{
 
 .about-icon {
   cursor: pointer;
-  height: 1.2rem;
+  height: 1.5rem;
   margin-right: 15px;
   margin-left: 5px;
 }
@@ -431,16 +442,17 @@ span1{
 }
 
 #project-title {
-  font-size: 1.5rem;
+  font-family: 'SaolDisplayThin';
+  font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 4rem;
   z-index: 10;
 }
 
 #single-project {
   font-size: 1.5rem;
-  font-family: 'CutiveMono-Regular';
+  font-family: 'SaolDisplayRegular';
   
 }
 
@@ -533,7 +545,7 @@ ul {
 
 .contact-icon {
   cursor: default;
-  margin-top: -1rem;
+  -top: -1rem;
 }
 
 icon.contact-icon {
@@ -645,13 +657,14 @@ footer {
 }
 
 .project-info h2 {
-  font-size: 2rem;
-  text-align: center;
+  font-size: 1.2rem;
+  text-align: left;
   margin-bottom: 0.5rem;
   color: #333;
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
   margin-right: 1rem;
   line-height: 1.2;
+  width: 70%;
 }
 
 .project-info a.button {
@@ -675,7 +688,7 @@ footer {
   /* No underline on hover */
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1150px) {
   #big-logo {
     max-width: 120px;
     max-height: 120px;
@@ -688,17 +701,21 @@ footer {
   }
 
   .section__text__p1 {
-    font-size: 1.5rem;
+    font-size: x-large;
     width: 65%;
     align-items: flex-end;
   }
 
   .section__text__p2 {
     font-size: small;
-    width: 40%;
+    width: 35%;
   }
   #hi {
     font-size: medium;
+  }
+
+  #design1 {
+    font-size: 2.8rem;
   }
 
   #circleText {
@@ -751,135 +768,9 @@ footer {
   }
 }
 
+/* Mobile view */
 
-@media (max-width: 600px) {
-
-  nav,
-  .nav-links,
-  .section-container,
-  #profile-about,
-  .contact-info-upper-container,
-  .contact-info-container {
-    /* Adjust the flex-direction for smaller screens to stack elements */
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-links,
-  .contact-info-upper-container,
-  .contact-info-container {
-    /* Set the width to auto to fill the container */
-    width: auto;
-  }
-
-  #profile-about {
-    /* Remove any specific height if set */
-    height: auto;
-    margin: 30px;
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #desktop-nav {
-    display: none;
-  }
-
-  #hamburger-nav {
-    display: block;
-  }
-
-  .hamburger-menu {
-    display: block;
-    float: right;
-  }
-
-  /* Mobile navigation dropdown menu styling */
-  #hamburger-nav .menu-links {
-    position: absolute;
-    /* Position it relative to the parent */
-    top: 100%;
-    right: 0;
-    background-color: transparent;
-    /* Or any color that fits your design */
-    z-index: 1000;
-    /* Ensure it stacks on top of other content */
-    display: none;
-    flex-direction: column;
-  
-  }
-
-  #hamburger-nav .menu-links.open {
-    display: flex;
-  }
-
-  #hamburger-nav .menu-links a {
-    font-size: 1rem;
-    padding: 5px 10px;
-    /* Add padding for tap targets */
-    display: block;
-    /* Ensure the links take up the full width */
-    color: black;
-    /* Text color */
-    background-color: transparent;
-    /* Background color */
-    text-align: center;
-    text-decoration: none;
-  }
-
-  #hamburger-nav .menu-links a:hover,
-  #hamburger-nav .menu-links a:focus {
-    background-color: rgba(111, 111, 111, 0.2);
-  }
-
-  #hamburger-nav .menu-links {
-    display: none;
-    /* other styles needed for positioning and formatting the dropdown */
-  }
-
-  /* Show the menu when hovering over #hamburger-nav */
-  #hamburger-nav:hover .menu-links {
-    display: block;
-    /* or 'flex' or whatever display mode you're using */
-  }
-
-  /* This is not necessary but it's a good practice to ensure the menu hides when the mouse leaves */
-  #hamburger-nav:not(:hover) .menu-links {
-    display: none;
-  }
-
-  /* Ensure the nav links are not displayed until the hamburger is clicked */
-  .nav-links:not(.open) {
-    display: none;
-  }
-
-  .menu-links.open {
-    display: block;
-  }
-
-  .section__pic-container,
-  .section__text {
-    width: 100%;
-  }
-
-  .title {
-    font-size: x-large;
-  }
-
-  /* Adjust the size and layout of other elements as necessary */
-  .btn {
-    /* Make buttons full width */
-    width: 100%;
-  }
-
+@media screen and (max-width: 600px) {
   #video-background,
   .background-image {
     object-fit: cover;
@@ -895,26 +786,54 @@ footer {
     object-fit: cover;
   }
 
-  /* Navigation Bar */
-  nav {
-    flex-direction: column;
-    padding: 1rem;
-    /* Add some padding */
-  }
-
-  .nav-links {
+  #desktop-nav {
     display: none;
-    /* Hide the nav links initially */
-    flex-direction: column;
-    width: 100%;
-    /* Full width */
-    align-items: center;
-    /* Center align nav items */
   }
-
-  .nav-links.open {
+  #hamburger-nav {
     display: flex;
   }
+  #contact,
+  footer {
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container,
+  .section__text {
+    width:max-content;
+  }
+    .title {
+      font-size: x-large;
+    }
 
   .project-card {
     height: 300px;
@@ -955,23 +874,10 @@ footer {
   .third {
     top: 90px;
   }
-  .sec #hamburger-nav {
-    display: block;
-    /* Show hamburger icon */
-  }
 
-  nav#hamburger-nav {
-    background-color: transparent;
-  }
-
-  .title {
-    font-size: x-large;
-    /* Adjust title size */
-  }
 
   .section__text {
     margin-top: -30px;
-    /* reduce top margin */
   }
 
   .section__pic-container {
@@ -979,11 +885,41 @@ footer {
     /* reduce bottom margin */
   }
 
-  .section__text__p1,
+  /* .section__text__p1,
   .section__text__p2 {
     font-size: large;
-    margin: 1rem;
-    /* Adjust text size */
+    margin: 0 0.5rem;
+  } */
+  .section__text__p1 {
+    font-size: large;
+    top:8%;
+    right: 0;;
+    word-spacing: 1px;
+    text-align:right;
+  }
+
+  #design1 {
+    font-size: xx-large;
+  }
+  .section__text__p2 {
+    top:40%;
+    font-size: small;
+    width: 100%;
+    left: 0;
+    text-align: justify;
+  }
+
+  #hi {
+    font-size: medium;
+  }
+  #circleText {
+    height: 100px;
+    width: 100px;
+  }
+  span1{
+    transform-origin: 0px 90px;
+    font-weight: 800;
+    font-size: 1rem;
   }
 
   .btn {
@@ -1019,73 +955,18 @@ footer {
     /* Adjust icon size */
   }
 
-  section.visible,
-  section:hover {
-    opacity: 1;
-    transform: translateY(0);
-    animation: appear 0.6s ease-out forwards;
-  }
-
-  @keyframes appear {
-    0% {
-      opacity: 0.5;
-      transform: translateY(20px);
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  #project-title {
-    position: sticky;
-    font-size: medium;
-    z-index: 10;
-    /* Ensure the sticky element is above other content */
-  }
-
-  .project-title h1,
-  .project-title p {
-    margin: 0;
-  }
-
- .overlay-text3{
+  .overlay-text3{
     font-size: medium;
   }
 
-  .project-info h2 {
+  footer nav {
     font-size: medium;
-    font-weight: bold;
-    line-height: 1.2;
+    height: fit-content;
+    margin-bottom: 2rem;
   }
 
-  .contact-info-container {
-    font-size: 1rem;
-  }
-
-  .contact-info-container {
-    flex-direction: row;
-    /* This will keep icon and text side by side */
-    flex-wrap: nowrap;
-    /* This will prevent them from wrapping to a new line */
-    justify-content: flex-start;
-    /* Aligns items to the start of the container */
-    align-items: center;
-    /* Centers items vertically */
-    margin: 0 0;
-  }
-
-  .contact-icon {
-    height: 1.5rem;
-    /* Adjust icon size for mobile */
-    width: auto;
-    /* Maintain aspect ratio */
-  }
-
-  .contact-info-container a {
-    font-size: 1rem;
-    /* Adjust font size for mobile */
+  .text-center {
+    font-size: medium;
   }
 
   footer {
@@ -1093,23 +974,4 @@ footer {
     align-items: center;
     font-size: smaller;
   }
-
-  .section-above-contact {
-    margin-bottom: 1rem;
-    /* Reduce bottom margin */
-  }
-
-  .section-above-contact {
-    margin-bottom: 1rem !important;
-    /* Reduce bottom margin */
-  }
-
-  #contact {
-    margin-top: -5rem !important;
-    /* Reduce top margin */
-    margin-bottom: -5rem !important;
-    /* Reduce bottom margin */
-  }
-
-
 }
