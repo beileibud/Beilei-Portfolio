@@ -78,11 +78,6 @@
       display: block;
     }
   
-    .section__pic-container,
-    .section__text {
-      width: 100%;
-    }
-  
     .title {
       font-size: x-large;
     }
