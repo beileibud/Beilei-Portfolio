@@ -914,11 +914,13 @@ footer p {
     right: 0;;
     word-spacing: 1px;
     text-align:right;
+    font-weight: 200;
   }
 
   #design1 {
     font-family: 'SaolDisplayThin';
     font-size: xx-large;
+    font-weight: 200;
   }
   #design-text {
     font-family: 'SaolThinLTC';
@@ -939,7 +941,6 @@ footer p {
   #circleText {
     height: 95px;
     width: 95px;
-    bottom: 16%;
   }
   span1{
     transform-origin: 0px 90px;
