@@ -65,7 +65,7 @@ nav,
 }
 
 nav {
-  font-family: 'SaolDisplayRegular';
+  font-family: 'SaolMono';
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -700,8 +700,7 @@ footer {
 }
 
 footer {
-  height: 26vh;
-  margin: 0 1rem;
+  bottom: 0;
 }
 
 footer p {
@@ -819,7 +818,7 @@ footer p {
   }
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
   .about-containers,
   .contact-info-upper-container,
@@ -1003,7 +1002,7 @@ footer p {
   footer nav {
     font-size: medium;
     height: fit-content;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
   
 
@@ -1011,9 +1010,6 @@ footer p {
     font-size: medium;
   }
 
-  footer {
-    height: 40vh;
-  }
   .contact-info-container {
     margin: 0;
   }
