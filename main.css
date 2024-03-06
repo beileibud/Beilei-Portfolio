@@ -293,7 +293,7 @@ font-family: 'SaolDisplaySimiBoldTLC';
 }
 #hi {
   letter-spacing: 2px;
-  font-family: 'SaolBoldTLC';
+  font-family: 'SaolSimiBold';
   font-size: x-large;
 }
 
@@ -453,11 +453,12 @@ span1{
 }
 
 #project-title {
+  width: 100%;
   font-family: 'SaolDisplayThin';
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 4rem;
+  padding: 0 0.5rem;
   z-index: 10;
 }
 
