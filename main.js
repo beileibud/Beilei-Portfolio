@@ -1,14 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Observer for sections
-  const sectionObserver = new IntersectionObserver(entries => {
+  const sectionObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        // Play the animation only if it has not been played before
+        if (!entry.target.classList.contains('animated')) {
+          entry.target.classList.add('visible', 'animated');
+          // Optional: Unobserve the section after the animation
+          observer.unobserve(entry.target);
+        }
       }
     });
   }, {
     rootMargin: '0px',
-    threshold: 0.1
+    threshold: 0.5
   });
 
   document.querySelectorAll('section').forEach(section => {

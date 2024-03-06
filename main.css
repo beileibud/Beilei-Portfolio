@@ -458,7 +458,7 @@ span1{
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   z-index: 10;
 }
 
