@@ -201,14 +201,14 @@ section {
   opacity: 0.5;
   /* Starting state */
   transform: translateY(20px);
-  transition: opacity 0.3s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.1s ease-out, transform 0.3s ease-out;
 }
 
 section.visible,
 section:hover {
   opacity: 1;
   transform: translateY(0);
-  animation: appear 0.5s ease-out forwards;
+  animation: appear 0.3s ease-out forwards;
 }
 
 @keyframes appear {
@@ -267,12 +267,15 @@ nav#desktop-nav {
   font-size: 2.5rem;
   margin-right: 0;
   text-align: justify-all;
+  word-spacing: 5px;
 }
 #design1 {
+  font-family: 'SaolDisplayBold';
   font-size: 3.5rem;
 }
 #design-text {
-font-family: 'SaolDisplaySimiBoldTLC';
+font-family: 'SaolDisplayBold';
+font-size: 3.5rem;
 }
 .section__text__p2 p {
   background-color:rgba(255,255,255,0.3);
@@ -909,7 +912,7 @@ footer p {
   }
 
   .section__text__p1 {
-    font-family: 'SaolDisplayThin';
+    font-family: 'SaolLight';
     font-size: large;
     top:15%;
     right: 0;;
@@ -919,12 +922,14 @@ footer p {
   }
 
   #design1 {
-    font-family: 'SaolDisplayThin';
+    font-family:'SaolLight';
     font-size: xx-large;
     font-weight: 200;
   }
   #design-text {
-    font-family: 'SaolThinLTC';
+    font-family: 'SaolLight';
+    font-size: xx-large;
+    font-weight: 300;
   }
   .section__text__p2 {
     font-family: 'SaolSimiBold';
