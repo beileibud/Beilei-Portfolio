@@ -54,6 +54,7 @@
 body {
   font-family: 'SaolDisplayRegular';
   width: 100%;
+  background-color: rgba(195, 166, 166, 0.1);
 }
 
 /* DESKTOP NAV */
@@ -264,7 +265,7 @@ nav#desktop-nav {
   position: absolute;
   top:10%;
   right: 0;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   margin-right: 0;
   text-align: justify-all;
   word-spacing: 5px;
@@ -523,6 +524,17 @@ ul {
   backdrop-filter: blur(30px);
   box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
 }
+.five {
+  height: 45px;
+  /* border-top: solid 1px black; */
+  position: sticky;
+  top: 180px;
+  z-index: 10;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  background-color: #ffffffcc;
+  backdrop-filter: blur(30px);
+  box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
+}
 
 
 /* CONTACT */
@@ -673,7 +685,7 @@ footer {
 }
 
 .project-info h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
   margin-bottom: 0.5rem;
   color: #333;
@@ -681,6 +693,9 @@ footer {
   margin-right: 1rem;
   line-height: 1.2;
   width: 70%;
+}
+.project-info p {
+  text-align: left;
 }
 
 .project-info a.button {
@@ -702,6 +717,9 @@ footer {
   background-color: #737373;
   text-decoration: none;
   /* No underline on hover */
+}
+.projectNew-img h1 {
+  margin-top: 2rem;
 }
 
 footer {
@@ -761,13 +779,20 @@ footer p {
   }
 
   .project-info h2{
-    font-size: medium;
+    font-size: small;
   }
+.projectNew-img h1 {
+  font-size: large;
+}
+.projectNew-img p {
+  font-size: small;
+}
 
   .first,
   .second,
   .third,
-  .four {
+  .four,
+  .five {
   height: 30px;
   background-color: #ffffffcc;
   box-shadow:inset -2px -2px 5px rgba(0, 0, 0, 0.1);
@@ -786,6 +811,10 @@ footer p {
   .third {
     top: 90px;
   }
+
+.five {
+  top:120px;
+}
   .sec #hamburger-nav {
     display: block;
     /* Show hamburger icon */
@@ -879,6 +908,10 @@ footer p {
     transform: scale(0.98);
     /* Slightly scale down to simulate a press */
   }
+  .projectNew-img h1 {
+    margin-top: 2.5rem;
+  }
+
   .first,
   .second,
   .third,
@@ -900,6 +933,9 @@ footer p {
   }
   .third {
     top: 90px;
+  }
+  .five {
+    top: 120px;
   }
 
 
