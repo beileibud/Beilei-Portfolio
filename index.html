@@ -8,100 +8,90 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
   <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <title>Beilei Zhu</title>
 </head>
 
 
 <body>
-  <div id="two-container">
-    <video autoplay muted loop id="video-background">
-      <source src="assets/back.mp4" type="video/mp4">
-    </video>
-    <!--Nav -->
-    <nav id="desktop-nav">
-      <div class="logo"><img src="assets/logo.png" id="big-logo" alt="logo"></div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#profile-about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#Resume">Resume</a></li>
-        </ul>
+  <div class="background-lines"></div>
+  <section class="head-container">
+    <div class="navbar">
+      <div class="navbar-logo"><img src="/assets/blacklogo.png" id="logo" /></div>
+      <ul>
+        <a href="#" class="nav-link mx-lg-2">
+          <li>About me</li>
+        </a>
+        <a href="#" class="nav-link mx-lg-2">
+          <li>Projects</li>
+        </a>
+        <a href="#" class="nav-link mx-lg-2">
+          <li>Contact</li>
+        </a>
+      </ul>
+      <div class="menu-toggle" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo"><img src="assets/blacklogo.png" alt="logo" style="height: auto; width: auto; max-height: 50px; max-width: 100px; margin-top: 20px;"></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#profile-about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <li><a href="#Resume" onclick="toggleMenu()">Resume</a></li>
-        </div>
+    </div>
+    <div id="mySidenav" class="side-nav">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+      <a href="#">About me</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="hero">
+      <div class="left-hero">
+        <p class="hi-text">Hi, I am Beilei Zhu, a UX Designer</p>
+        <p class="UX-design">Creative</br>Designer</p>
       </div>
-    </nav>
+      <div class="right-hero">
+        <p>Skilled in Frontend & Graphic Design.</p>
+        </br>
+        <p>Crafting intuition-driven experiences</br>centered on understanding user's needs.</p>
+        </p>
+      </div>
+    </div>
+    <div class="blob-cont">
+      <div class="pupple blob"></div>
+      <div class="gray blob"></div>
+      <div class="green blob"></div>
+    </div>
+  </section>
 
-    <!-- About -->
-    <section id="profile-about" class="about-container">
-      <div class="section__text">
-        <div class="section__text__p1">
-          <p><span id="design1">Hi, I am Beilei</span> A UX Designer skilled in Frontend and Graphic Design. ⚡Crafting intuition-driven experiences centered on <span id="design-text"> understanding users' needs.</span></p>
-        </div>
-        <div  class="section__text__p2">
-          <!-- <p id="hi">Design is not just what it looks and feels like. Design is how it works. </p> -->
-        
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="about-icon"
-            onclick="location.href='//linkedin.com/in/beileibud/'" />
-          <img src="./assets/github.png" alt="My Github profile" class="about-icon"
-            onclick="location.href='//github.com/beileibud'" />
-        </div>
-      </div>
-      <p id="circleText"></p>
-    </section>
-    <!-- <section id="profile-about" class="about-container">
-      <div class="section__text">
-        <div class="section__text__p1">
-          <p><span id="design1">Design</span> is not just what it looks and feels like. Design is <span id="design-text"> how it works.</span></p>
-        </div>
-        <div  class="section__text__p2">
-          <p>Hi, I am <span id="hi">Beilei Zhu</span>. </p>
-          <p>A UX Designer skilled in Frontend and Graphic Design. ⚡Crafting intuition-driven experiences centered on understanding users' needs.</p>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="about-icon"
-            onclick="location.href='//linkedin.com/in/beileibud/'" />
-          <img src="./assets/github.png" alt="My Github profile" class="about-icon"
-            onclick="location.href='//github.com/beileibud'" />
-        </div>
-      </div>
-      <p id="circleText"></p>
-    </section> -->
+  <section class="work-container">
+    <div class="work-nav">
+      <a href="#" class="work-link" onclick="selectWork(event, 'projects')">Projects</a>
+      <a href="#" class="work-link" onclick="selectWork(event, 'graphic-design')">Graphic Design</a>
+      <a href="#" class="work-link" onclick="selectWork(event, 'photography')">Photography</a>
+      <hr class="work-divider">
+    </div>
+    </div>
+  </section>
 
-  </div>
-
-  <!-- Project -->
+  <!-- Boostrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<!-- 
   <section id="projects" style="margin-top: 150px;">
     <h1 class="title" style="margin-bottom: 50px;">PROJECTS</h1>
     <div class="experience-details-container">
       <div class="first">
         <ul id="project-title">
-          <li><a id="single-project">Careville+.  NO.1</a></li>
+          <li><a id="single-project">Careville+. NO.1</a></li>
           <li><a>2024 In-progress</a></li>
           <li><a>UX Design Challenge</a></li>
         </ul>
       </div>
       <div class="project-card">
         <div class="projectNew-img">
-           <h1>Health Care | Elderly | AI Machine learning</h1><p>TImeline: 2-3months, in progress</p>
-            <img src="./assets/whole flow.gif" class="section2_pic" alt="careville+ Project"width="80%" style="margin-bottom: 20px"/>
+          <h1>Health Care | Elderly | AI Machine learning</h1>
+          <p>TImeline: 2-3months, in progress</p>
+          <img src="./assets/whole flow.gif" class="section2_pic" alt="careville+ Project" width="80%"
+            style="margin-bottom: 20px" />
         </div>
       </div>
       <div class="second">
@@ -124,7 +114,7 @@
         </div>
         <div class="project1-img">
           <a href="https://uxfol.io/p/BeileiZhu/Rhino-Splits" target="_blank">
-            <img src="./assets/2211r.gif" class="section1_pic" alt="Rhino Splits Project" />
+            <img src="./assets/Frame 37009.svg" class="section1_pic" alt="Rhino Splits Project" />
           </a>
         </div>
       </div>
@@ -159,7 +149,7 @@
       </div>
       <div class="project-card">
         <div class="project3-img">
-          <!-- <a href="https://potofinder.netlify.app" target="_blank"> -->
+          <a href="https://potofinder.netlify.app" target="_blank">
             <img src="./assets/banhimi.png" class="section2_pic" alt="project3" />
           </a>
         </div>
@@ -190,7 +180,7 @@
         <p><a href="https://linkedin.com/in/beileibud/">LinkedIn</a></p>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <footer class="footer-bottom">
@@ -206,9 +196,6 @@
       <a class="text-reset fw-bold">beileizhu.com</a>
     </div>
   </footer>
-  <script src="./main.js"></script>
-
-
-</body>
-
-</html>
+  <script src="./main.js"></script>]
+</body >
+    </html >
