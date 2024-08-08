@@ -1,0 +1,47 @@
+.project {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px; /* Add some spacing between projects */
+  }
+  
+  .project-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Ensures no overflow from the canvas */
+  }
+  
+  .project-img canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure canvas is not above the text */
+  }
+  
+  .static-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    visibility: hidden; /* Hide static img but keep for SEO */
+  }
+  
+  .project-title, .project-category {
+    position: static; /* Default static positioning to keep below the image */
+    color: #000; /* Black color for text */
+    margin-top: 10px; /* Space between image and text */
+    font-size: 1.2em; /* Example font size, adjust as needed */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Ensure text occupies full width of container */
+  }
+  
+  .project-title {
+    font-weight: bold; /* Bold title */
+  }
+  
+  .project-category {
+    font-size: 1em; /* Smaller font size for category */
+    color: #666; /* Lighter color for category */
+  }
+  

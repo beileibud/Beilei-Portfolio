@@ -1,0 +1,68 @@
+.folded-hero {
+    height: 70vh;
+    overflow: hidden;
+    perspective: 1000px;
+    margin-top: 50%;
+
+  }
+  
+  .perspective-wrapper {
+    height: 100%;
+    transition: transform 0.1s ease-out;
+  }
+  
+  .fold-wrapper {
+    height: 100%;
+    transform-style: preserve-3d;
+    width: 60vw;
+    height: 80vh;
+    left: 20vw; /* Centers the content horizontally */
+    top: 10vh; /* Centers the content vertically */
+  }
+  
+  .fold-top, .fold-bottom {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .fold-top {
+    top: 0;
+    transform-origin: bottom center;
+  }
+  
+  .fold-bottom {
+    bottom: 0;
+    transform-origin: top center;
+  }
+  .hero-img {
+    width: 100%; /* Adjust width as needed */
+    height: 70vh; /* Adjust height as needed */
+    overflow: hidden;
+  }  
+/* Add these to your FoldedHero.css */
+.folded-hero .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.folded-hero .hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+  overflow: hidden;
+}
+
+.folded-hero .hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.folded-hero .hero-copy {
+  width: 100%;
+  padding: 2rem;
+}

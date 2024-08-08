@@ -1,0 +1,93 @@
+/* src/components/WorkSection/WorkSection.css */
+.work-section {
+  width: 100%;
+}
+
+.work-section-header {
+  width: 100%;
+  display: flex;
+  margin: 0 0;
+}
+
+.work-section-header > div {
+  flex: 1;
+}
+
+.section-header-copy {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+.projects-nav {
+  margin: 0;
+  width: 100%;
+}
+
+.project-link {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid var(--text);
+  height: 60px;
+  padding: 1em 0;
+}
+
+.project-l {
+  display: flex;
+  flex: 4;
+}
+
+.project-date {
+  flex: 2;
+}
+
+.project-dir {
+  flex: 0.5;
+  text-align: right;
+}
+
+.project-link .project-link-img {
+  margin-right: 1em;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.project-link:hover .project-link-img {
+  width: 120px;
+  height: 100%;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.project-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media (max-width: 900px) {
+  .work-section-header {
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .section-header-copy {
+    padding: 0 2.5px;
+  }
+
+  .projects-nav-container {
+    width: 100%;
+  }
+
+  .project-l {
+    width: 300px;
+  }
+
+  .project-date {
+    display: none;
+  }
+}

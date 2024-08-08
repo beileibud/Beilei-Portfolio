@@ -1,0 +1,218 @@
+body {
+  min-height: 100vh;
+  margin: 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--bg);
+  font-family: 'Manrope', sans-serif;
+}
+
+a {
+  font-size: 18px;
+}
+
+.hi-text {
+  font-size: 18px;
+}
+
+p {
+  font-size: 25px;
+  margin: 0;
+}
+
+.head-container {
+  height: 40vh;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 65vw;
+  max-width: 800px;
+  height: 60px;
+  background: rgba(211, 211, 211, 0.35);
+  backdrop-filter: blur(10px);
+  border-radius: 100px;
+  border: 2px solid rgba(211,211,211,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.navbar ul li:hover {
+  font-size: 1.2em;
+}
+
+#logo {
+  width: 55px;
+}
+
+.nav-link {
+  font-size: 20px;
+  letter-spacing: 0.11rem;
+}
+
+.navbar-logo {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-dark {
+  background: var(--color-text);
+}
+
+.navbar-dark * {
+  color: var(--color-bg);
+}
+
+/* Toggle menu styles */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+}
+
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1001;
+  right: 0;
+  top: 70px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Side nav styles (if you still want to keep it) */
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1500;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.side-nav.open {
+  width: 250px;
+}
+
+.side-nav a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  color: #f1f1f1;
+}
+
+.side-nav .close-btn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 900px) {
+  .navbar .desktop-menu {
+    display: none;
+  }
+  
+  .menu-toggle {
+    display: flex;
+  }
+
+  .dropdown-content {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 80px; /* Adjust based on your navbar height */
+    left: 0;
+    right: 0;
+  }
+
+  .navbar-items {
+    gap: 0;
+  }
+
+  .navbar-item {
+    padding: 5px;
+  }
+
+  .nav-link {
+    font-size: large;
+    letter-spacing: 0.1rem;
+  }
+}
+
+/* Additional styles you might want to keep */
+.navbar .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navbar-items {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-item {
+  padding: 10px;
+}

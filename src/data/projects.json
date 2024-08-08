@@ -1,0 +1,95 @@
+{
+  "projects": [
+    {
+      "img": "/src/assets/project-images/img1.jpg",
+      "img2":"/src/assets/project-images/img3.jpg",
+      "title": "Beileizhu.com",
+      "year": "2023",
+      "category": "Web Design"
+    },
+    {
+      "img": "/src/assets/project-images/img2.jpg",
+      "img2":"/src/assets/project-images/img4.jpg",
+      "title": "FOTOfinder",
+      "year": "2023",
+      "category": "Web Design - FrontEnd"
+    },
+    {
+      "img": "/src/assets/project-images/img3.jpg",
+      "img2":"/src/assets/project-images/img2.jpg",
+      "title": "Rhino Splits",
+      "year": "2023-2024",
+      "category": "UX/UI"
+    },
+    {
+      "img": "/src/assets/project-images/img4.jpg",
+      "img2":"/src/assets/project-images/img1.jpg",
+      "title": "BanhMi & Roll+",
+      "year": 2020,
+      "category": "Graphic Design"
+    },
+    {
+      "img": "/src/assets/project-images/img5.jpg",
+      "img2":"/src/assets/project-images/img5.jpg",
+      "title": "Chao",
+      "year": 2020,
+      "category": "Graphic Design"
+    },
+    {
+      "img": "/src/assets/project-images/img6.jpg",
+      "img2":"/src/assets/project-images/img3.jpg",
+      "title": "Photography.",
+      "year": 2020,
+      "category": ""
+    },
+    {
+      "img": "/src/assets/project-images/img7.jpg",
+      "img2":"/src/assets/project-images/img3.jpg",
+      "title": "Chronicle Echoes",
+      "year": 2021,
+      "category": "Cinematography"
+    },
+    {
+      "img": "/src/assets/project-images/img8.jpg",
+      "img2":"/src/assets/project-images/img3.jpg",
+      "title": "Serenity Frames",
+      "year": 2023,
+      "category": "Branding"
+    },
+    {
+      "img": "/src/assets/project-images/img9.jpg",
+      "img2":"/src/assets/project-images/img3.jpg",
+      "title": "Mystic Interfaces",
+      "year": 2023,
+      "category": "Digital Marketing"
+    },
+    {
+      "img": "/src/assets/project-images/img10.jpg",
+      "img2":"/src/assets/project-images/img3.jpg",
+      "title": "Pixelated Dreams",
+      "year": 2023,
+      "category": "Web Design"
+    },
+    {
+      "img": "/src/assets/project-images/img11.jpg",
+      "img2":"/src/assets/project-images/img3.jpg",
+      "title": "Spectrum Creatives",
+      "year": 2023,
+      "category": "Creative Direction"
+    },
+    {
+      "img": "/src/assets/project-images/img1.jpg",
+      "img2":"/src/assets/project-images/img3.jpg",
+      "title": "Visionary Clicks",
+      "year": 2023,
+      "category": "Photography"
+    },
+    {
+      "img": "/src/assets/project-images/img2.jpg",
+      "img2":"/src/assets/project-images/img3.jpg",
+      "title": "Eunoia Aesthetics",
+      "year": 2023,
+      "category": "Web Design"
+    }
+  ]
+}
