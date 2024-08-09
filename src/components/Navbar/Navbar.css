@@ -198,9 +198,12 @@ p {
     font-size: large;
     letter-spacing: 0.1rem;
   }
+
+  #logo {
+    width: 40px;
+  }
 }
 
-/* Additional styles you might want to keep */
 .navbar .container {
   width: 100%;
   display: flex;
