@@ -163,7 +163,7 @@ const SampleProject = () => {
             <h1 className="section-title">Work</h1>
           </div>
           <div className="section-header-copy">
-            <p>2016-2023</p>
+            <p>2018-2024</p>
             <p>
               <Link to="/work" id="a-underline">
                 View All

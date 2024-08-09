@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import transition from "../../transition";
 
-import TeamImg1 from "../../assets/team/team1.jpg";
+import TeamImg1 from "/project-images/beilei.png";
 import TeamImg2 from "../../assets/team/team2.jpg";
 
 import Project from "../../components/Project/Project";
@@ -18,7 +18,7 @@ const Contact = () => {
       <div className="divider"></div>
 
       <div className="container">
-        <h1 className="section-title">Contact Us</h1>
+        <h1 className="section-title">Contact</h1>
         <div className="whitespace-300"></div>
         <p>Odense & Viborg</p>
       </div>
@@ -29,30 +29,21 @@ const Contact = () => {
         <section className="contact-info">
           <div className="contact-info-col">
             <h2 className="section-h2">
-              We forge strong partnerships with brands and teams, sculpting
-              their prospective ventures via design. From audacious conceptual
-              journeys to meticulous execution of thoughtful design, we invite
-              you to connect to explore possibilities or delve deeper into our
-              studio's philosophy on crafting fundamentals.
+              From audacious conceptual
+              journeys to meticulous execution of thoughtful design, let's explore possibilities or delve deeper on crafting fundamentals.
             </h2>
           </div>
           <div className="contact-info-col">
             <div className="contact-info-sub-col">
-              <p>Neoteric A/S</p>
-              <p>Skt. Lukas Vej 4D</p>
-              <p>DK-1624</p>
-              <p>Copenhagen</p>
+              <p>Beilei Zhu</p>
+              <p>Nashville, TN</p>
+              <p></p>
+              <p></p>
 
               <br />
 
-              <p>Jens Olufsens Gade 11C</p>
-              <p>DK-8260</p>
-              <p>Aarhus</p>
-
-              <br />
-
-              <p>+45 5246 8426</p>
-              <p>hello@neoteric.dk</p>
+              <p>+1 404 935 3665</p>
+              <p>beileibud@gmail.com</p>
 
               <br />
               <br />
@@ -61,12 +52,12 @@ const Contact = () => {
               <br />
               <br />
               <br />
-              <p>CHX 868234</p>
+              <p>37135</p>
             </div>
             <div className="contact-info-sub-col">
               <a href="#">Instagram</a> <br />
               <a href="#">LinkedIn</a> <br />
-              <a href="#">Twitter</a>
+              <a href="#">Github</a>
             </div>
           </div>
         </section>
@@ -76,27 +67,25 @@ const Contact = () => {
       <div className="container">
         <section className="contact-info">
           <div className="contact-info-col">
-            <h1 className="section-title">All Inquiries</h1>
+            <h1 className="section-title">All </h1>
           </div>
           <div className="contact-info-col">
             <div className="contact-info-sub-col">
-              <p>Business</p>
+              <p>Web Developer</p>
               <p className="sec-contact">
-                New business inquiries and collaborations. Please write to
-                hi@neoteric.dk
+               Frontend, React, JavaScript, HTML, CSS, SQL, GIT
               </p>
 
               <br />
-              <p>Public Relations</p>
+              <p>UX/UI</p>
               <p className="sec-contact">
-                Requests for interviews, materials, and talks. Please write to
-                press@neoteric.dk
+                Reaserch,Concept, Communication, Design, Interface, Mockup, Figma
               </p>
 
               <br />
-              <p>Careers</p>
+              <p>Design</p>
               <p className="sec-contact">
-                We're currently not accepting interns or hiring.
+                Graphic Design, Digital Design.
               </p>
 
               <br />
@@ -106,32 +95,31 @@ const Contact = () => {
               <br />
               <br />
               <br />
-              <p>CVR—37503878</p>
             </div>
             <div className="contact-info-sub-col"></div>
           </div>
         </section>
       </div>
-      <div className="divider"></div>
+      {/* <div className="divider"></div> */}
       <div className="container">
         <section className="contact-info">
           <div className="contact-info-col">
-            <h1 className="section-title">Founding Partners</h1>
+            {/* <h1 className="section-title">Founding Partners</h1> */}
           </div>
           <div className="contact-info-col">
             <div className="contact-info-sub-col">
-              <p>
+              {/* <p>
                 Neoteric® is established and directed by Danish designers Morten
                 Skov Hansen and Emil Rasmussen, with branches in Copenhagen and
                 Viborg.
-              </p>
+              </p> */}
               <br />
-              <p>
+              {/* <p>
                 From audacious conceptual journeys to meticulous execution of
                 thoughtful design, we invite you to connect to explore
                 possibilities or delve deeper into our studio's philosophy on
                 crafting fundamentals.
-              </p>
+              </p> */}
               <br />
               <br />
               <br />
@@ -152,18 +140,17 @@ const Contact = () => {
                 <img src={TeamImg1} alt="" />
               </div>
               <div className="dev-name">
-                <p>Martin Jens Lassen</p>
+                <p>Beilei Zhu</p>
               </div>
               <div className="dev-pos">
-                <p>Founder & Design Director</p>
-                <p>martin@neoteric.com</p>
+                <p>Developer & Designer</p>
+                <p>beileibud@gmail.com</p>
               </div>
               <div className="dev-contact">
-                <p>+45 87439 374</p>
                 <p>LinkedIn</p>
               </div>
             </div>
-            <div className="dev">
+            {/* <div className="dev">
               <div className="dev-img">
                 <img src={TeamImg2} alt="" />
               </div>
@@ -177,8 +164,8 @@ const Contact = () => {
               <div className="dev-contact">
                 <p>+23 9843 7834</p>
                 <p>LinkedIn</p>
-              </div>
-            </div>
+              </div> */}
+            {/* </div> */}
           </div>
         </div>
       </div>
@@ -189,7 +176,7 @@ const Contact = () => {
             <h1 className="section-title">Work</h1>
           </div>
           <div className="section-header-copy">
-            <p>2016-2023</p>
+            <p>2018-2024</p>
             <p>
               <Link to="/" id="a-underline">
                 View All
