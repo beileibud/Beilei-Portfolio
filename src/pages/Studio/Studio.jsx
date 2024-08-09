@@ -20,50 +20,33 @@ const Studio = () => {
 
       <div className="container">
         <h1 className="section-title">
-          Established to craft <br /> fundamentals
+          From Design to  <br /> Development
         </h1>
         <div className="whitespace-300"></div>
-        <p>Established 2018</p>
+        <p>My journey from 2018</p>
       </div>
       <div className="divider"></div>
       <div className="container">
         <section className="contact-info">
           <div className="contact-info-col">
             <h2 className="section-h2">
-              Neoteric<sup>&copy;</sup> is a creative hub rooted in Denmark,
-              collaborating globally to sculpt iconic brands and immersive
-              digital journeys, always honing in on the vital core.
+            Beilei is a creative designer and problem solver who immerses in digital journeys, always honing in on the vital core.
             </h2>
           </div>
           <div className="contact-info-col">
             <div className="contact-info-sub-col">
               <p>
-                Neoteric Studios, nestled in the bustling heart of Copenhagen,
-                stands as a testament to the city's legacy of avant-garde design
-                and pioneering innovation. The studio was the brainchild of Elsa
-                and Johan, both luminaries in their own right.
+              Background in Media and Communication, combined with rigorous training at Nashville Software School, has honed her skills in both UX design and web development.
               </p>
 
               <br />
               <p>
-                What sets Neoteric Studios apart is its unyielding commitment to
-                storytelling. Every project undertaken is seen as a blank
-                canvas, waiting for a narrative to unfold. The team delves deep
-                into the brand's ethos, history, and aspirations.
+              As a designer, she excels at crafting intuitive, user-centric interfaces, while her developer expertise shines in building responsive, full-stack applications.
               </p>
 
               <br />
               <p>
-                While firmly rooted in Danish design principles, Neoteric
-                Studios has always cast its eyes towards the horizon. Their
-                portfolio boasts collaborations with brands from Tokyo to New
-                York, yet each project carries a hint of that quintessential
-                Danish minimalism.
-              </p>
-
-              <p>
-                Neoteric has championed the integration of technology with
-                design, crafting digital realms that enchant and engage.
+              Her commitment to continuous learning and problem-solving drives her to deliver innovative solutions that enrich user experiences.
               </p>
               <br />
               <br />
@@ -74,15 +57,16 @@ const Studio = () => {
             </div>
             <div className="contact-info-sub-col">
               <p>
-                Neoteric Studios has always been at the vanguard of digital
-                evolution. Recognizing the paradigm shift towards digital
-                experiences early on, they invested in curating a team of
-                digital magicians. From immersive AR experiences to intuitive
-                UI/UX designs.
+              Always continuous learning and her passion for innovation drive her to stay at the forefront of design and technology. Her commitment to crafting seamless, user-focused digital solutions makes her a valuable asset in any project, ready to tackle new challenges and contribute to creating meaningful digital experiences.
               </p>
 
               <br />
+
               <p>
+                Drawing | Photography | Gym | Traveling
+              </p>
+              
+              {/* <p>
                 At the core of Neoteric's philosophy lies a profound respect for
                 essentialism. Amidst the noise of the modern world, they seek
                 the fundamental, the elemental.
@@ -93,7 +77,7 @@ const Studio = () => {
                 Recognizing the paradigm shift towards digital experiences early
                 on, they invested in curating a team of digital magicians. From
                 immersive AR experiences to intuitive UI/UX designs.
-              </p>
+              </p> */}
             </div>
           </div>
         </section>
@@ -101,7 +85,7 @@ const Studio = () => {
         <div className="studio-img">
           <div className="studio-img-alt">
             <p>
-              Co-founders Lars Eriksson & Kristian Møller. <br /> Odense, 2020.
+              My first Dynamic Real-time App <br /> Nashville Software School, 2023.
             </p>
             <br />
             <div className="studio-main-img">
@@ -136,16 +120,16 @@ const Studio = () => {
           </div>
         </section>
       </div>
-      <div className="divider"></div>
+      {/* <div className="divider"></div> */}
       <div className="container">
         <section className="contact-info">
           <div className="contact-info-col"></div>
           <div className="contact-info-col">
             <div className="contact-info-sub-col">
-              <h2>1</h2>
+              {/* <h2>1</h2> */}
             </div>
             <div className="contact-info-sub-col">
-              <p>Conceptualization & Drafting</p>
+              {/* <p>Conceptualization & Drafting</p>
               <p className="contact-info-sec">
                 Turning initial ideas into tangible concepts, and sketching
                 preliminary designs.
@@ -154,13 +138,13 @@ const Studio = () => {
                 <br />
                 <br />
                 <br />
-              </p>
+              </p> */}
             </div>
           </div>
         </section>
       </div>
-      <div className="divider"></div>
-      <div className="container">
+      {/* <div className="divider"></div> */}
+      {/* <div className="container">
         <section className="contact-info">
           <div className="contact-info-col"></div>
           <div className="contact-info-col">
@@ -438,7 +422,7 @@ const Studio = () => {
             awardName={award.name}
           />
         ))}
-      </section>
+      </section> */}
       <div className="whitespace-100"></div>
       <div className="divider"></div>
       <div className="container">
