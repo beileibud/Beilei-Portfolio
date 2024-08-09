@@ -27,7 +27,7 @@ const Project = ({ projectImg, hoverImg, projectTitle, projectCategory }) => {
 <div className="project">
   <Link to="/work/sample-project">
     <div className="project-img" ref={containerRef}>
-      <img src={projectImg} alt={projectTitle} className="static-img" />
+      <img src={projectImg} alt={projectTitle} className="static-img" loading="lazy" />
     </div>
     <div className="project-title">
       <p>{projectTitle}</p>

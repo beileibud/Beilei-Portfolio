@@ -7,19 +7,19 @@ import Masonry from "react-masonry-css";
 import Footer from "../../components/Footer/Footer";
 
 // images
-import ProjectImageMain from "../../assets/project-images/img2.jpg";
-import ProjectImage1 from "../../assets/project-images/img2.jpg";
-import ProjectImage2 from "../../assets/project-images/img3.jpg";
-import ProjectImage3 from "../../assets/project-images/img4.jpg";
-import ProjectImage4 from "../../assets/project-images/img5.jpg";
-import ProjectImage5 from "../../assets/project-images/img6.jpg";
-import ProjectImage6 from "../../assets/project-images/img7.jpg";
-import ProjectImage7 from "../../assets/project-images/img8.jpg";
-import ProjectImage8 from "../../assets/project-images/img9.jpg";
-import ProjectImage9 from "../../assets/project-images/img10.jpg";
-import ProjectImage10 from "../../assets/project-images/img11.jpg";
-import ProjectImage11 from "../../assets/project-images/img1.jpg";
-import ProjectImage12 from "../../assets/project-images/img2.jpg";
+import ProjectImageMain from "/project-images/img2.jpg";
+import ProjectImage1 from "/project-images/img2.jpg";
+import ProjectImage2 from "/project-images/img3.jpg";
+import ProjectImage3 from "/project-images/img4.jpg";
+import ProjectImage4 from "/project-images/img5.jpg";
+import ProjectImage5 from "/project-images/img6.jpg";
+import ProjectImage6 from "/project-images/img7.jpg";
+import ProjectImage7 from "/project-images/img8.jpg";
+import ProjectImage8 from "/project-images/img9.jpg";
+import ProjectImage9 from "/project-images/img10.jpg";
+import ProjectImage10 from "/project-images/img11.jpg";
+import ProjectImage11 from "/project-images/img1.jpg";
+import ProjectImage12 from "/project-images/img2.jpg";
 
 import Project from "../../components/Project/Project";
 

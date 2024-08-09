@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import transition from "../../transition";
 import FoldedHero from "../../components/Folded/FoldedHero";
-import HeroImage from "../../assets/project-images/beilei.png";
+import HeroImage from "/project-images/beilei.png";
 import WorkSection from "../../components/WorkSection/WorkSection";
 import Project from "../../components/Project/Project";
 import FeedItem from "../../components/FeedItem/FeedItem";

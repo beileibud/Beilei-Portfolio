@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import transition from "../../transition";
 
-import HeroImage from "../../assets/project-images/img2.jpg";
+import HeroImage from "/project-images/img2.jpg";
 
 import Award from "../../components/Award/Award";
 import Project from "../../components/Project/Project";
