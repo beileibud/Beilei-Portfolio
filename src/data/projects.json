@@ -1,15 +1,15 @@
 {
   "projects": [
     {
-      "img": "/src/assets/project-images/img1.jpg",
-      "img2":"/src/assets/project-images/img3.jpg",
+      "img": "../assets/project-images/img1.jpg",
+      "img2":"../assets/project-images/img3.jpg",
       "title": "Beileizhu.com",
       "year": "2023",
       "category": "Web Design"
     },
     {
-      "img": "/src/assets/project-images/img2.jpg",
-      "img2":"/src/assets/project-images/img4.jpg",
+      "img": "../assets/project-images/img2.jpg",
+      "img2":"../assets/project-images/img4.jpg",
       "title": "FOTOfinder",
       "year": "2023",
       "category": "Web Design - FrontEnd"
